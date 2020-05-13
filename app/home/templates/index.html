@@ -1,133 +1,135 @@
-{% extends "base_site.html" %}
-
-{% block title %} Dashboard {% endblock title %}
-
-{% block stylesheets %}
-{{ super() }}
-{% endblock stylesheets %}
-
-{% block content %}
-
-{% include "site_template/navigation.html" %}
-
-{% include "site_template/top-stats.html" %}
-
-{% with messages = get_flashed_messages() %}
-{% if messages %}
-{% for msg in messages %}
+{% extends "base_site.html" %} {% block title %} Dashboard {% endblock title %} {% block stylesheets %} {{ super() }} {% endblock stylesheets %} {% block content %} {% include "site_template/navigation.html" %} {% include "site_template/top-stats.html"
+%} {% with messages = get_flashed_messages() %} {% if messages %} {% for msg in messages %}
 <div class="alert alert-primary" role="alert">
-  {{msg}}
+    {{msg}}
 </div>
-{% endfor %}
-{% endif %}
-{% endwith %}
+{% endfor %} {% endif %} {% endwith %}
 
 <div class="container-fluid bg-gradient-dark mt--7" style="min-height: 100vh;">
-  <div class="row">
-    <div class="col-xl-12 text-white display-3 pb-2">Your Databases</div>
-  </div>
-
-  <div class="row">
-    <div class="col-xl-4 mb-4 pb-2">
-      <div class="card">
-        <div class="card-header mx-auto">
-          <a data-toggle="modal" data-target="#createNewDatabase">
-            <i class="fas fa-plus-circle p-3 ui-icon" style="font-size: 5rem; color:#3498db"></i>
-          </a>
-        </div>
-      </div>
+    <div class="row">
+        <div class="col-xl-12 text-white display-3 pb-2">Your Databases</div>
     </div>
-    {% for database in databases: %}
-    <div class="col-xl-4 mb-4 pb-2">
-      <div class="card shadow">
-        <div class="card-header text-white dashboard-card-header">
-          <span> {{ database.name| upper }} </span>
-          <span class="text-right float-right ">
-            <i class="fas fa-external-link-alt pr-3 ui-icon-grow"></i>
-            <a data-toggle="modal" data-target="#deleteDatabase{{database.name}}"> <i
-                class="fas fa-trash text-white ui-icon"></i></a>
-          </span>
-          <div style="font-size:0.85rem;"><i class="fas fa-database pr-2">
-            </i>{{ database.type| upper }}</div>
+
+    <div class="row">
+        <div class="col-xl-4 mb-4 pb-2">
+            <div class="card">
+                <div class="card-header mx-auto">
+                    <a data-toggle="modal" data-target="#createNewDatabase">
+                        <i class="fas fa-plus-circle p-3 ui-icon" style="font-size: 5rem; color:#3498db"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <ul class="list-group list-group-flush" style="padding: 0.6rem,1rem;">
-          <li class="list-group-item dashboard-list-group-item ui-icon-grow" style="color: #28df28;"><i
-              class="fas fa-plus pr-2"></i>Create Entity
-            Set</li>
-          {% for entitySet in database.entitySets: %}
-          <li class="list-group-item dashboard-list-group-item">{{ entitySet }}
-            <span class="float-right" style="font-size: small;"> <i class="fas fa-edit pl-1"
+        {% for database in databases: %}
+        <div class="col-xl-4 mb-4 pb-2">
+            <div class="card shadow">
+                <div class="card-header text-white dashboard-card-header">
+                    <span> {{ database.name| upper }} </span>
+                    <span class="text-right float-right ">
+            <i class="fas fa-external-link-alt pr-3 ui-icon-grow"></i>
+            <a data-toggle="modal" data-target="#deleteDatabase{{database.name}}">
+              <i class="fas fa-trash text-white ui-icon"></i>
+            </a>
+          </span>
+                    <div style="font-size:0.85rem;"><i class="fas fa-database pr-2">
+            </i>{{ database.type| upper }}</div>
+                </div>
+                <ul class="list-group list-group-flush" style="padding: 0.6rem,1rem;">
+                    <li class="list-group-item dashboard-list-group-item ui-icon-grow" style="color: #28df28;"><i class="fas fa-plus pr-2"></i>Create Entity Set
+                    </li>
+                    {% for entitySet in database.entitySets: %}
+                    <li class="list-group-item dashboard-list-group-item">{{ entitySet }}
+                        <span class="float-right" style="font-size: small;"> <i class="fas fa-edit pl-1"
                 style="color: #3498db ;"></i><i class="fas fa-trash pl-1" style="color: #ec7063 ;"></i>
             </span>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <!-- Modal for deleting database -->
-    <div class="modal fade" id="deleteDatabase{{database.name}}" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="deleteDatabase"> <i class="fas fa-trash text-red pr-3"></i>Delete Database</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <!-- Modals -->
+
+        <!-- Modal for deleting database -->
+        <div class="modal fade" id="deleteDatabase{{database.name}}" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteDatabase"> <i class="fas fa-trash text-red pr-3"></i>Delete Database</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
-          <div class="modal-body style=" font-family: Roboto;">
+                    </div>
+                    <d class="modal-body style=" font-family: Roboto; ">
             Are you sure you want to delete <strong>{{database.name| upper }} </strong>?
             <br>
             Once deleted the database cannot be recovered.
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-            <form action="/deleteDB" method="DELETE">
-              <button type="submit" class="btn btn-primary">Delete Database</button>
+          <div class="modal-footer ">
+            <button type="button " class="btn btn-secondary " data-dismiss="modal ">Cancel</button>
+            <form action="/deleteDB " method="DELETE ">
+              <button type="submit " class="btn btn-primary ">Delete Database</button>
             </form>
           </div>
         </div>
       </div>
     </div>
-    {% endfor %}
 
-    <!-- Modals -->
-
-    <!-- Modal for Creating New Database -->
-    <div class="modal fade" id="createNewDatabase" tabindex="-1" role="dialog" aria-labelledby="createNewDatabase"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="createNewDatabase">Create a new database</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+    <!-- Modal for creating new entityset -->
+    <div class="modal fade " id="createEntitySet{{database.name}} " tabindex="-1 " role="dialog ">
+      <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content ">
+          <div class="modal-header ">
+            <h5 class="modal-title " id="createEntitySet "> <i class="fas fa-plus-circle text-green pr-3 "></i>
+              Create entity set</h5>
+            <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+              <span aria-hidden="true ">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <form action="/createDB" method="post">
-              {{ createDbForm.hidden_tag() }}
-              {{ createDbForm.database_type.label }}
-              {{createDbForm.database_type(class_="form-control pb-2") }}
-              <div class="p-3"></div>
-              {{ createDbForm.database_name.label }}
-              {{createDbForm.database_name(size=20, class_="form-control", placeholder="Database Name") }}
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Create Database</button>
-          </div>
+          <form action="/createEntitySet " method="POST "></form>
+          <div class="modal-body style=" font-family: Roboto;">
+                        {{createESForm.hidden_tag() }} {{ createESForm.entity_set_name.label }} {{createDbForm.entity_set_name(class_="form-control pb-2") }}
+                        <span>Attributes</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Create Entity Set</button>
+                </div>
+            </div>
         </div>
-      </div>
+        </form>
     </div>
-  </div>
 
+    {% endfor %}
+
+    <!-- Modal for Creating New Database -->
+    <div class="modal fade" id="createNewDatabase" tabindex="-1" role="dialog" aria-labelledby="createNewDatabase" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createNewDatabase">Create a new database</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/createDB" method="post">
+                        {{ createDbForm.hidden_tag() }} {{ createDbForm.database_type.label }} {{createDbForm.database_type(class_="form-control pb-2") }}
+                        <div class="p-3"></div>
+                        {{ createDbForm.database_name.label }} {{createDbForm.database_name(size=20, class_="form-control", placeholder="Database Name") }}
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Create Database</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 </div>
 
-{% endblock content %}
+</div>
 
-{% block javascripts %}
-{{ super()}}
-{% endblock javascripts %}
+{% endblock content %} {% block javascripts %} {{ super()}} {% endblock javascripts %}

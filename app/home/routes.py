@@ -9,7 +9,7 @@ from flask import render_template, redirect, url_for, session
 # from flask_login import login_required, current_user
 # from app import login_manager
 from jinja2 import TemplateNotFound
-from app.base.forms import CreateDatabaseForm
+from app.base.forms import CreateDatabaseForm, CreateEntitySetForm
 import requests
 
 UDAPI_URL = "http://localhost:2020"
@@ -19,8 +19,9 @@ UDAPI_URL = "http://localhost:2020"
 def index():
     # Initializing all forms for rendering
     createDbForm = CreateDatabaseForm()
+    createESForm = CreateEntitySetForm()
 
-    # Retriving all the Databases Stored for the user from UDAPI
+    Retriving all the Databases Stored for the user from UDAPI
     url = UDAPI_URL + "/all/databases"
     headers = {'jwtToken': session['jwtToken']}
     response = requests.get(url, headers=headers)
@@ -54,8 +55,9 @@ def index():
                 return render_template('errors/page_500.html'), 500
             print(databases)
 
-    # databases=[{"name":"test-student", "type":"mysql","entitySets":['professors','lizards','mimosas']},{"name":"test2", "type":"mongo","entitySets":['swords','reverse']},{"name":"test3", "type":"mongo","entitySets":["Lorem", "ipsum", "dolor"]},{"name":"test-student", "type":"mysql","entitySets":['professors','lizards','mimosas']},{"name":"test2", "type":"mongo","entitySets":['bread','swords']},{"name":"test3", "type":"mongo","entitySets":["Lorem", "ipsum", "dolor"]}]
-    return render_template('index.html', databases=databases, createDbForm=createDbForm)
+    # databases = [{"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['swords', 'reverse']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]},
+     #            {"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['bread', 'swords']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]}]
+    return render_template('index.html', databases=databases, createDbForm=createDbForm, createESForm=createESForm)
 
     # if not current_user.is_authenticated:
     #     return redirect(url_for('base_blueprint.login'))
@@ -82,7 +84,7 @@ def route_template(template):
     except:
         return render_template('error-500.html'), 500
 
+
 @blueprint.app_errorhandler(404)
 def handle_exceptions(e):
     return render_template('error-404.html'), 404
-
