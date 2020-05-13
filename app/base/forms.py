@@ -32,5 +32,12 @@ class ResetPasswordForm(FlaskForm):
 
 
 class CreateDatabaseForm(FlaskForm):
+<<<<<<< HEAD
     database_type = SelectField(u'Database Type', choices=[('',"--Database Type--"),('mysql',"MySQL"),("mongodb","MongoDB")], id="database_type", validators=[DataRequired()])
     database_name=TextField('Database Name'     , id='database_name_create' , validators=[DataRequired()])
+=======
+    database_type = SelectField(u'Database Type', choices=[(
+        'mysql', "MySQL"), ("mongodb", "MongoDB")], id="database_type", validators=[DataRequired()])
+    database_name = TextField('Database Name', id='database_name_create',
+                              validators=[DataRequired()])
+>>>>>>> d224f0c8be40f2c8c77e8d2b5b2b6e5621698894

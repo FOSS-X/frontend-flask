@@ -31,7 +31,11 @@ UDAPI_URL = "http://localhost:2020"
 
 @blueprint.route('/index', methods=['GET', 'POST'])
 def index():
+<<<<<<< HEAD
     # # Initializing all forms for rendering
+=======
+    # Initializing all forms for rendering
+>>>>>>> d224f0c8be40f2c8c77e8d2b5b2b6e5621698894
     createDbForm = CreateDatabaseForm()
 
     Retriving all the Databases Stored for the user from UDAPI
@@ -70,6 +74,7 @@ def index():
     # databases = [{"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['swords', 'reverse']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]},
     #              {"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['bread', 'swords']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]}]
 
+<<<<<<< HEAD
     # Creating new Database by sending request to UDAPI
     if 'createDB' in request.form:
         database_type = request.form['database_type']
@@ -94,6 +99,14 @@ def index():
         return render_template('errors/page_500.html'), 500
 
     return render_template('index.html', databases=databases, createDbForm=createDbForm)
+=======
+    # Creating Database Form
+    create_DB_form = CreateDatabaseForm(request.form)
+    if 'createDB' in request.form:
+        return "Create     DB"
+
+    return render_template('index.html', databases=databases, createDbForm=create_DB_form)
+>>>>>>> d224f0c8be40f2c8c77e8d2b5b2b6e5621698894
 
 
 @blueprint.route('/<template>')
@@ -119,6 +132,7 @@ def route_template(template):
 @blueprint.app_errorhandler(404)
 def handle_exceptions(e):
     return render_template('error-404.html'), 404
+<<<<<<< HEAD
 
 @blueprint.app_errorhandler(Exception)
 def handle_unexpected_error(e):
@@ -127,3 +141,5 @@ def handle_unexpected_error(e):
     print(f"{bcolors.ENDC}")
     return render_template('error-500.html'), 500
 
+=======
+>>>>>>> d224f0c8be40f2c8c77e8d2b5b2b6e5621698894
