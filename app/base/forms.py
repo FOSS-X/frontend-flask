@@ -32,5 +32,12 @@ class ResetPasswordForm(FlaskForm):
 
 
 class CreateDatabaseForm(FlaskForm):
-    database_type = SelectField(u'Database Type', choices=[('',"--Database Type--"),('mysql',"MySQL"),("mongodb","MongoDB")], id="database_type", validators=[DataRequired()])
-    database_name=TextField('Database Name'     , id='database_name_create' , validators=[DataRequired()])
+    database_type = SelectField(u'Database Type', choices=[(
+        '', "--Database Type--"), ('mysql', "MySQL"), ("mongodb", "MongoDB")], id="database_type", validators=[DataRequired()])
+    database_name = TextField('Database Name', id='database_name_create',
+                              validators=[DataRequired()])
+
+
+class UpdateEntitySetForm(FlaskForm):
+    database_name = TextField('Entity Set Name', id='entity_set_name_update',
+                              validators=[DataRequired()])
