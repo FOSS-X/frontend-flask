@@ -21,7 +21,7 @@ from app.base.forms import LoginForm, CreateAccountForm, ResetPasswordForm
 # from app.base.util import verify_pass
 
 
-ENDPOINT_URL = "http://localhost:2020"
+UDAPI_URL = "http://localhost:2020"
 
 
 @blueprint.route('/')
@@ -40,24 +40,37 @@ def login():
 
     if 'login' in request.form:
         
-        # read form data
+        # POST to UDAPI to login
         username = request.form['username']
         password = request.form['password']
 
-        url = ENDPOINT_URL + "/login"
+        url = UDAPI_URL + "/login"
         payload = {
             "username":username,
             "password":password
         }
         response = requests.post(url, json=payload)
         data = response.json()
+        print(data['jwtToken'])  # DEBUG LINE
         # return data['jwtToken']
     
+
         # If login successfull
         if data['success']:
             session["username"] = username
             session["jwtToken"] = data['jwtToken']
-            session["email"] = "dummy@email.com"
+
+            # GET user info from UDAPI
+            url = UDAPI_URL + "/user"
+            headers = {'jwtToken': data['jwtToken']}
+            response = requests.get(url, headers=headers)
+            user_data = response.json()
+            if user_data['success']:
+                session["email"] = user_data['users'][0]['email']
+                session["admin"] = user_data['users'][0]['admin']
+            else:
+                print(user_data['message'])
+                return render_template('errors/page_500.html'), 500
             return redirect(url_for('base_blueprint.route_default'))
 
         return render_template( 'login/login.html', msg=data['message'], form=login_form)
@@ -95,7 +108,7 @@ def create_user():
         password         = request.form['password']
         confirm_password = request.form['repeat_password']
 
-        url = ENDPOINT_URL + "/register"
+        url = UDAPI_URL + "/register"
         payload = {
             "username":username,
             "email":email,
@@ -143,7 +156,7 @@ def reset_password():
         password         = request.form['password']
         confirm_password = request.form['repeat_password']
 
-        url = ENDPOINT_URL + "/resetpassword"
+        url = UDAPI_URL + "/resetpassword"
         payload = {
             "email":email,
             "new_password":password,
@@ -177,8 +190,11 @@ def reset_password():
 @blueprint.route('/logout')
 # @login_required
 def logout():
-    session.pop("username", None)
-    session.pop("jwtToken", None)
+    # session.pop("username", None)
+    # session.pop("jwtToken", None)
+    # session.pop("email", None)
+    # session.pop("admin", None)
+    session.clear()
     # logout_user()
     return redirect(url_for('base_blueprint.login'))
 
