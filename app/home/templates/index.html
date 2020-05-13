@@ -12,6 +12,16 @@
 
 {% include "site_template/top-stats.html" %}
 
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for msg in messages %}
+<div class="alert alert-primary" role="alert">
+  {{msg}}
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
 <div class="container-fluid bg-gradient-dark mt--7" style="min-height: 100vh;">
   <div class="row">
     <div class="col-xl-12 text-white display-3 pb-2">Your Databases</div>
@@ -22,7 +32,7 @@
       <div class="card">
         <div class="card-header mx-auto">
           <a data-toggle="modal" data-target="#createNewDatabase">
-            <i class="fas fa-plus-circle p-3" style="font-size: 5rem; color:#3498db"></i>
+            <i class="fas fa-plus-circle p-3 editable-icon" style="font-size: 5rem; color:#3498db"></i>
           </a>
         </div>
       </div>
@@ -32,9 +42,11 @@
       <div class="card shadow">
         <div class="card-header text-white dashboard-card-header">
           <span> {{ database.name| upper }} </span>
-          <span class="text-right float-right " style="font-size: small;"> <i class="fas fa-external-link-alt pr-1">
-            </i><i class="fas fa-trash">
-            </i> </span>
+          <span class="text-right float-right ">
+            <i class="fas fa-external-link-alt pr-3"></i>
+            <a data-toggle="modal" data-target="#deleteDatabase{{database.name}}"> <i
+                class="fas fa-trash text-white"></i></a>
+          </span>
           <div style="font-size:0.85rem;"><i class="fas fa-database pr-2">
             </i>{{ database.type| upper }}</div>
         </div>
@@ -52,7 +64,35 @@
         </ul>
       </div>
     </div>
+    <!-- Modal for deleting database -->
+    <div class="modal fade" id="deleteDatabase{{database.name}}" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="deleteDatabase"> <i class="fas fa-trash text-red pr-3"></i>Delete Database</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body style=" font-family: Roboto;">
+            Are you sure you want to delete <strong>{{database.name| upper }} </strong>?
+            <br>
+            Once deleted the database cannot be recovered.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <form action="/deleteDB" method="DELETE">
+              <button type="submit" class="btn btn-primary">Delete Database</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     {% endfor %}
+
+    <!-- Modals -->
+
+    <!-- Modal for Creating New Database -->
     <div class="modal fade" id="createNewDatabase" tabindex="-1" role="dialog" aria-labelledby="createNewDatabase"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -70,7 +110,7 @@
               {{createDbForm.database_type(class_="form-control pb-2") }}
               <div class="p-3"></div>
               {{ createDbForm.database_name.label }}
-              {{createDbForm.database_name(size=20, class_="form-control",placeholder="Database Name") }}
+              {{createDbForm.database_name(size=20, class_="form-control", placeholder="Database Name") }}
             </form>
           </div>
           <div class="modal-footer">
