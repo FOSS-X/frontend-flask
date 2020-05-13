@@ -9,7 +9,7 @@ from flask import render_template, redirect, url_for, session, request
 # from flask_login import login_required, current_user
 # from app import login_manager
 from jinja2 import TemplateNotFound
-from app.base.forms import CreateDatabaseForm, CreateEntitySetForm
+from app.base.forms import CreateDatabaseForm
 import requests
 
 UDAPI_URL = "http://localhost:2020"
@@ -19,7 +19,6 @@ UDAPI_URL = "http://localhost:2020"
 def index():
     # Initializing all forms for rendering
     createDbForm = CreateDatabaseForm()
-    createESForm = CreateEntitySetForm()
 
     Retriving all the Databases Stored for the user from UDAPI
     url = UDAPI_URL + "/all/databases"
@@ -55,14 +54,14 @@ def index():
                 return render_template('errors/page_500.html'), 500
 
     # databases = [{"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['swords', 'reverse']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]},
-     #            {"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['bread', 'swords']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]}]
+    #              {"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['bread', 'swords']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]}]
 
     # Creating Database Form
     create_DB_form = CreateDatabaseForm(request.form)
     if 'createDB' in request.form:
         return "Create     DB"
 
-    return render_template('index.html', databases=databases, createDbForm=create_DB_form, createESForm=createESForm)
+    return render_template('index.html', databases=databases, createDbForm=create_DB_form)
 
 
 @blueprint.route('/<template>')

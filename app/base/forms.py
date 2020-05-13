@@ -36,19 +36,3 @@ class CreateDatabaseForm(FlaskForm):
         'mysql', "MySQL"), ("mongodb", "MongoDB")], id="database_type", validators=[DataRequired()])
     database_name = TextField('Database Name', id='database_name_create',
                               validators=[DataRequired()])
-
-
-class AttributeForm(FlaskForm):
-    attribute_name = TextField('Attribute Name', id="attribute_name_create",
-                               validators=[DataRequired()])
-    datatype = SelectField(u'DataType', choices=[(
-        'int', "Integer"), ("VARCHAR(256)", "String"), ("BOOLEAN", "Boolean"), ("DOUBLE", "Double"), ("DATE", "Date"), ("TIME", "Time"), ("DATETIME", "Date Time")], id="database_type", validators=[DataRequired()])
-    pk = BooleanField('PK', validators=[DataRequired()])
-    nn = BooleanField('NN', validators=[DataRequired()])
-    ai = BooleanField('AI', validators=[DataRequired()])
-
-
-class CreateEntitySetForm(FlaskForm):
-    entity_set_name = TextField(
-        'Entity Set Name', id='entity_set_name_create', validators=[DataRequired()])
-    attributes = FieldList('attributes', FormField(AttributeForm))
