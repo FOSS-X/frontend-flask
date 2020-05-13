@@ -5,12 +5,26 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from app.home import blueprint
-from flask import render_template, redirect, url_for, session, request
+from flask import render_template, redirect, url_for, session, request, flash, jsonify
 # from flask_login import login_required, current_user
 # from app import login_manager
 from jinja2 import TemplateNotFound
 from app.base.forms import CreateDatabaseForm
 import requests
+import logging
+
+log = logging.getLogger(__name__)
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
 
 UDAPI_URL = "http://localhost:2020"
 
@@ -18,7 +32,7 @@ UDAPI_URL = "http://localhost:2020"
 @blueprint.route('/index', methods=['GET', 'POST'])
 def index():
     # # Initializing all forms for rendering
-    # createDbForm = CreateDatabaseForm()
+    createDbForm = CreateDatabaseForm()
 
     # Retriving all the Databases Stored for the user from UDAPI
     url = UDAPI_URL + "/all/databases"
@@ -55,12 +69,30 @@ def index():
 
 
 
-    # Creating Database Form
-    create_DB_form = CreateDatabaseForm(request.form)
+    # Creating new Database by sending request to UDAPI
     if 'createDB' in request.form:
-        return "Create     DB"
-    
-    return render_template('index.html', databases=databases, createDbForm=create_DB_form)
+        database_type = request.form['database_type']
+        database_name = request.form['database_name']
+
+        url = UDAPI_URL + "/" + database_type + "/databases"
+        payload = {
+            "databaseName":database_name
+        }
+        headers = {'jwtToken': session['jwtToken']}
+        response = requests.post(url, headers=headers, json=payload)
+        data = response.json()
+
+        if data['success']:
+            flash(data["message"], "success")
+            return redirect(url_for('home_blueprint.index'))
+        elif not data['success']:
+            flash("You can't have two databases with the same name and type.", "danger")
+            return redirect(url_for('home_blueprint.index'))
+            
+        print(data['message'])
+        return render_template('errors/page_500.html'), 500
+
+    return render_template('index.html', databases=databases, createDbForm=createDbForm)
 
 
 @blueprint.route('/<template>')
@@ -85,4 +117,11 @@ def route_template(template):
 @blueprint.app_errorhandler(404)
 def handle_exceptions(e):
     return render_template('error-404.html'), 404
+
+@blueprint.app_errorhandler(Exception)
+def handle_unexpected_error(e):
+    msg = "UnexpectedError: " + str(e)
+    log.exception(f"{bcolors.FAIL}{msg}{bcolors.WARNING}")
+    print(f"{bcolors.ENDC}")
+    return render_template('error-500.html'), 500
 
