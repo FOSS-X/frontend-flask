@@ -15,62 +15,62 @@ import requests
 UDAPI_URL = "http://localhost:2020"
 
 
-# @blueprint.route('/index', methods=['GET', 'POST'])
-# def index():
-#     # Initializing all forms for rendering
-#     createDbForm = CreateDatabaseForm()
-#     updateESForm = UpdateEntitySetForm()
-
-#     # Retriving all the Databases Stored for the user from UDAPI
-#     url = UDAPI_URL + "/all/databases"
-#     headers = {'jwtToken': session['jwtToken']}
-#     response = requests.get(url, headers=headers)
-#     databasesResp = response.json()
-#     if databasesResp['success']:
-#         session['count_DBs'] = len(databasesResp['mysql']) + len(databasesResp['mongodb'])
-#         session['count_SQL'] = len(databasesResp['mysql'])
-#         session['count_noSQL'] = len(databasesResp['mongodb'])
-#     else:
-#         print(user_data['message'])
-#         return render_template('errors/page_500.html'), 500
-
-#     # Retrive all EntitySets of each Databases
-#     databaseTypes = ['mysql', 'mongodb']
-#     databases = []
-#     for databaseType in databaseTypes:
-#         for databaseName in databasesResp[databaseType]:
-#             url = UDAPI_URL + '/' + databaseType + '/databases/' + databaseName
-#             headers = {'jwtToken': session['jwtToken']}
-#             response = requests.get(url, headers=headers)
-#             entitySetsResp = response.json()
-#             if entitySetsResp['success']:
-#                 database = {
-#                     "name": databaseName,
-#                     "type": databaseType,
-#                     "entitySets": entitySetsResp['entitySets']
-#                 }
-#                 databases.append(database)
-#             else:
-#                 print(user_data['message'])
-#                 return render_template('errors/page_500.html'), 500
-
-#     # databases = [{"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['swords', 'reverse']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]},
-#     #              {"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['bread', 'swords']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]}]
-
-#     # Creating Database Form
-#     create_DB_form = CreateDatabaseForm(request.form)
-#     if 'createDB' in request.form:
-#         return "Create     DB"
-
-#     return render_template('index.html', databases=databases, createDbForm=create_DB_form, updateESForm=updateESForm)
-
 @blueprint.route('/index', methods=['GET', 'POST'])
 def index():
+    # Initializing all forms for rendering
     createDbForm = CreateDatabaseForm()
     updateESForm = UpdateEntitySetForm()
-    databases = [{"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['swords', 'reverse']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]},
-                 {"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['bread', 'swords']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]}]
-    return render_template('index.html', databases=databases, createDbForm=createDbForm, updateESForm=updateESForm)
+
+    # Retriving all the Databases Stored for the user from UDAPI
+    url = UDAPI_URL + "/all/databases"
+    headers = {'jwtToken': session['jwtToken']}
+    response = requests.get(url, headers=headers)
+    databasesResp = response.json()
+    if databasesResp['success']:
+        session['count_DBs'] = len(databasesResp['mysql']) + len(databasesResp['mongodb'])
+        session['count_SQL'] = len(databasesResp['mysql'])
+        session['count_noSQL'] = len(databasesResp['mongodb'])
+    else:
+        print(user_data['message'])
+        return render_template('errors/page_500.html'), 500
+
+    # Retrive all EntitySets of each Databases
+    databaseTypes = ['mysql', 'mongodb']
+    databases = []
+    for databaseType in databaseTypes:
+        for databaseName in databasesResp[databaseType]:
+            url = UDAPI_URL + '/' + databaseType + '/databases/' + databaseName
+            headers = {'jwtToken': session['jwtToken']}
+            response = requests.get(url, headers=headers)
+            entitySetsResp = response.json()
+            if entitySetsResp['success']:
+                database = {
+                    "name": databaseName,
+                    "type": databaseType,
+                    "entitySets": entitySetsResp['entitySets']
+                }
+                databases.append(database)
+            else:
+                print(user_data['message'])
+                return render_template('errors/page_500.html'), 500
+
+    # databases = [{"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['swords', 'reverse']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]},
+    #              {"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['bread', 'swords']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]}]
+
+    # Creating Database Form
+    create_DB_form = CreateDatabaseForm(request.form)
+    if 'createDB' in request.form:
+        return "Create     DB"
+
+    return render_template('index.html', databases=databases, createDbForm=create_DB_form, updateESForm=updateESForm)
+
+# @blueprint.route('/index', methods=['GET', 'POST'])
+# def index():
+#     createDbForm = CreateDatabaseForm()
+#     updateESForm = UpdateEntitySetForm()
+#     databases = [{"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['swords', 'reverse']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]},
+#                  {"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['bread', 'swords']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]}]
+#     return render_template('index.html', databases=databases, createDbForm=createDbForm, updateESForm=updateESForm)
 
 
 @blueprint.route('/<template>')
