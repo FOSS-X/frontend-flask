@@ -20,7 +20,7 @@ def index():
     # Initializing all forms for rendering
     createDbForm = CreateDatabaseForm()
 
-    Retriving all the Databases Stored for the user from UDAPI
+    # Retriving all the Databases Stored for the user from UDAPI
     url = UDAPI_URL + "/all/databases"
     headers = {'jwtToken': session['jwtToken']}
     response = requests.get(url, headers=headers)
