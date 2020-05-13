@@ -5,19 +5,23 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from app.home import blueprint
-from flask import render_template, redirect, url_for
+from flask import render_template, redirect, url_for, session
 from flask_login import login_required, current_user
 from app import login_manager
 from jinja2 import TemplateNotFound
 
 @blueprint.route('/index')
-@login_required
 def index():
-    
-    if not current_user.is_authenticated:
+    if not "username" in session:
         return redirect(url_for('base_blueprint.login'))
+        
     databases=[{"name":"test-student", "type":"mysql"},{"name":"test2", "type":"mongo"},{"name":"test3", "type":"mongo"},{"name":"test4", "type":"mysql"},{"name":"joan","type":"mongo"},{"name":"test4", "type":"mysql"},{"name":"joan","type":"mongo"}]
     return render_template('index.html', databases=databases)
+
+    # if not current_user.is_authenticated:
+    #     return redirect(url_for('base_blueprint.login'))
+    # databases=[{"name":"test-student", "type":"mysql"},{"name":"test2", "type":"mongo"},{"name":"test3", "type":"mongo"},{"name":"test4", "type":"mysql"},{"name":"joan","type":"mongo"},{"name":"test4", "type":"mysql"},{"name":"joan","type":"mongo"}]
+    # return render_template('index.html', databases=databases)
 
 @blueprint.route('/<template>')
 def route_template(template):
