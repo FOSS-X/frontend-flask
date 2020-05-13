@@ -12,17 +12,33 @@
 
 {% include "site_template/top-stats.html" %}
 
-{% with messages = get_flashed_messages() %}
-{% if messages %}
-{% for msg in messages %}
-<div class="alert alert-primary" role="alert">
-  {{msg}}
-</div>
-{% endfor %}
-{% endif %}
-{% endwith %}
+<div class="container-fluid bg-gradient-dark mt--9" style="min-height: 100vh;">
 
-<div class="container-fluid bg-gradient-dark mt--7" style="min-height: 100vh;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+                {% for category, message in messages %}
+                    {% if category == 'primary' %}
+                        <div class="alert alert-primary" role="alert">{{message}}</div>
+                    {% elif category == 'secondary' %}
+                        <div class="alert alert-secondary" role="alert">{{message}}</div>
+                    {% elif category == 'success' %}
+                        <div class="alert alert-success" role="alert">{{message}}</div>
+                    {% elif category == 'danger' %}
+                        <div class="alert alert-danger" role="alert">{{message}}</div>
+                    {% elif category == 'warning' %}
+                        <div class="alert alert-warning" role="alert">{{message}}</div>
+                    {% elif category == 'info' %}
+                        <div class="alert alert-info" role="alert">{{message}}</div>
+                    {% elif category == 'light' %}
+                        <div class="alert alert-light" role="alert">{{message}}</div>
+                    {% elif category == 'dark' %}
+                        <div class="alert alert-dark" role="alert">{{message}}</div>
+                    {% endif %}
+                {% endfor %}
+        {% endif %}
+    {% endwith %}
+    
+
   <div class="row">
     <div class="col-xl-12 text-white display-3 pb-2">Your Databases</div>
   </div>
@@ -110,7 +126,7 @@
               {{ createDbForm.database_type(class_="form-control pb-2") }}
               <div class="p-3"></div>
               {{ createDbForm.database_name.label }}
-              {{createDbForm.database_name(size=20, class_="form-control", placeholder="Database Name") }}
+              {{ createDbForm.database_name(size=20, class_="form-control", placeholder="Database Name") }}
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
