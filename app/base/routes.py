@@ -5,20 +5,20 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from flask import jsonify, render_template, redirect, request, url_for, session
-from flask_login import (
-    current_user,
-    login_required,
-    login_user,
-    logout_user
-)
+# from flask_login import (
+#     current_user,
+#     login_required,
+#     login_user,
+#     logout_user
+# )
 import requests
 
-from app import db, login_manager
+# from app import db, login_manager
 from app.base import blueprint
 from app.base.forms import LoginForm, CreateAccountForm, ResetPasswordForm
-from app.base.models import User
+# from app.base.models import User
 
-from app.base.util import verify_pass
+# from app.base.util import verify_pass
 
 
 ENDPOINT_URL = "http://localhost:2020"
@@ -57,6 +57,7 @@ def login():
         if data['success']:
             session["username"] = username
             session["jwtToken"] = data['jwtToken']
+            session["email"] = "dummy@email.com"
             return redirect(url_for('base_blueprint.route_default'))
 
         return render_template( 'login/login.html', msg=data['message'], form=login_form)
@@ -191,9 +192,9 @@ def shutdown():
 
 ## Errors
 
-@login_manager.unauthorized_handler
-def unauthorized_handler():
-    return render_template('errors/page_403.html'), 403
+# @login_manager.unauthorized_handler
+# def unauthorized_handler():
+#     return render_template('errors/page_403.html'), 403
 
 @blueprint.errorhandler(403)
 def access_forbidden(error):

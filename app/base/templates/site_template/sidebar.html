@@ -34,7 +34,7 @@
         </a>
         <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
           <div class=" dropdown-header noti-title">
-            <h6 class="text-overflow m-0">{{ current_user.email }}</h6>
+            <h6 class="text-overflow m-0">{{ session['email'] }}</h6>
           </div>
           <a href="/profile" class="dropdown-item">
             <i class="ni ni-single-02"></i>
@@ -111,8 +111,8 @@
           </a>
         </li>
 
-        {% if current_user.is_authenticated %}
-
+     
+        {% if "username" in session %}
         <li class="nav-item">
           <a class="nav-link" href={{ url_for('base_blueprint.logout') }}>
             <i class="ni ni-user-run text-red"></i> Logout
