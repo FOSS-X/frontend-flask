@@ -26,5 +26,5 @@ class ResetPasswordForm(FlaskForm):
     repeat_password = PasswordField('Repeat Password', id='rpwd_create'     , validators=[DataRequired()])
 
 class CreateDatabaseForm(FlaskForm):
-    database_type = SelectField(u'Database Type', choices=[('mysql',"MySQL"),("mongodb","MongoDB")], id="database_type", validators=[DataRequired()])
+    database_type = SelectField(u'Database Type', choices=[('',"--Database Type--"),('mysql',"MySQL"),("mongodb","MongoDB")], id="database_type", validators=[DataRequired()])
     database_name=TextField('Database Name'     , id='database_name_create' , validators=[DataRequired()])
