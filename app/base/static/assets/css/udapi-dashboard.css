@@ -22,8 +22,8 @@
  .ui-icon-grow { transition: all .1s ease-in-out; }
  .ui-icon-grow:hover
  {
-         -webkit-transform: scale(1.05);
-         -ms-transform: scale(1.05);
+         -webkit-transform: scale(1.1);
+         -ms-transform: scale(1.1);
          transform: scale(1.05);
  }
  
