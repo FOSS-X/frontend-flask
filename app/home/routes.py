@@ -5,7 +5,7 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from app.home import blueprint
-from flask import render_template, redirect, url_for, session
+from flask import render_template, redirect, url_for, session, request
 # from flask_login import login_required, current_user
 # from app import login_manager
 from jinja2 import TemplateNotFound
@@ -15,10 +15,10 @@ import requests
 UDAPI_URL = "http://localhost:2020"
 
 
-@blueprint.route('/index')
+@blueprint.route('/index', methods=['GET', 'POST'])
 def index():
-    # Initializing all forms for rendering
-    createDbForm = CreateDatabaseForm()
+    # # Initializing all forms for rendering
+    # createDbForm = CreateDatabaseForm()
 
     # Retriving all the Databases Stored for the user from UDAPI
     url = UDAPI_URL + "/all/databases"
@@ -52,15 +52,15 @@ def index():
             else:
                 print(user_data['message'])
                 return render_template('errors/page_500.html'), 500
-            print(databases)
 
-    # databases=[{"name":"test-student", "type":"mysql","entitySets":['professors','lizards','mimosas']},{"name":"test2", "type":"mongo","entitySets":['swords','reverse']},{"name":"test3", "type":"mongo","entitySets":["Lorem", "ipsum", "dolor"]},{"name":"test-student", "type":"mysql","entitySets":['professors','lizards','mimosas']},{"name":"test2", "type":"mongo","entitySets":['bread','swords']},{"name":"test3", "type":"mongo","entitySets":["Lorem", "ipsum", "dolor"]}]
-    return render_template('index.html', databases=databases, createDbForm=createDbForm)
 
-    # if not current_user.is_authenticated:
-    #     return redirect(url_for('base_blueprint.login'))
-    # databases=[{"name":"test-student", "type":"mysql"},{"name":"test2", "type":"mongo"},{"name":"test3", "type":"mongo"},{"name":"test4", "type":"mysql"},{"name":"joan","type":"mongo"},{"name":"test4", "type":"mysql"},{"name":"joan","type":"mongo"}]
-    # return render_template('index.html', databases=databases)
+
+    # Creating Database Form
+    create_DB_form = CreateDatabaseForm(request.form)
+    if 'createDB' in request.form:
+        return "Create     DB"
+    
+    return render_template('index.html', databases=databases, createDbForm=create_DB_form)
 
 
 @blueprint.route('/<template>')
