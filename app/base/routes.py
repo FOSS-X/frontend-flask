@@ -51,12 +51,12 @@ def login():
         }
         response = requests.post(url, json=payload)
         data = response.json()
-        print(data['jwtToken'])  # DEBUG LINE
         # return data['jwtToken']
     
 
         # If login successfull
         if data['success']:
+            print(data['jwtToken'])  # DEBUG LINE
             session["username"] = username
             session["jwtToken"] = data['jwtToken']
 
