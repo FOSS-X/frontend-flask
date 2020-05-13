@@ -1,0 +1,76 @@
+{% extends "base_site.html" %}
+
+{% block title %} Dashboard {% endblock title %}
+
+{% block stylesheets %}
+{{ super() }}
+{% endblock stylesheets %}
+
+{% block content %}
+
+{% include "site_template/navigation.html" %}
+
+{% include "site_template/top-stats.html" %}
+
+<div class="container-fluid bg-gradient-dark mt--7" style="height: 100vh;
+width: 100vw;">
+  <div class="row">
+    <div class="col-xl-12 text-white display-3 pb-2">Your Databases</div>
+  </div>
+  <div class="row">
+    <div class="col-xl-5 mb-5">
+      <div class="card shadow">
+        <div class="card-header h3 bg-translucent-success text-white card-title">
+          Database Name
+        </div>
+        <div class="card-body">
+          Type
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-5 mb-5">
+      <div class="card shadow">
+        <div class="card-header h3 bg-translucent-success text-white card-title">
+          Database Name
+        </div>
+        <div class="card-body">
+          Type
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-5 mb-5">
+      <div class="card shadow">
+        <div class="card-header h3 bg-translucent-success text-white card-title">
+          Database Name
+        </div>
+        <div class="card-body">
+          Type
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-5 mb-5">
+      <div class="card shadow">
+        <div class="card-header h3 bg-translucent-success text-white card-title">
+          Database Name
+        </div>
+        <div class="card-body">
+          Type
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+{% endblock content %}
+
+{% block javascripts %}
+{{ super()}}
+{% endblock javascripts %}
