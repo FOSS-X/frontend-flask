@@ -58,13 +58,20 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="createNewDatabase">Modal title</h5>
+            <h5 class="modal-title" id="createNewDatabase">Create a new database</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            ...
+            <form action="/createDB" method="post">
+              {{ createDbForm.hidden_tag() }}
+              {{ createDbForm.database_type.label }}
+              {{createDbForm.database_type(class_="form-control pb-2") }}
+              <div class="p-3"></div>
+              {{ createDbForm.database_name.label }}
+              {{createDbForm.database_name(size=20, class_="form-control",placeholder="Database Name") }}
+            </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
