@@ -19,25 +19,29 @@
 <head>
   {% block head %}
 
-    {% block meta %}
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% endblock meta %}
+  {% block meta %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {% endblock meta %}
 
   <title>
     Flask Dashboard Argon - {% block title %}{% endblock %} | AppSeed
   </title>
 
   {% block stylesheets %}
-    <!-- Favicon -->
-    <link href="{{ url_for('static', filename='assets/img/brand/favicon.png') }}" rel="icon" type="image/png">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <!-- Icons -->
-    <link href="{{ url_for('static', filename='assets/js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
-    <!-- CSS Files -->
-    <link href="{{ url_for('static', filename='assets/css/argon-dashboard.css') }}" rel="stylesheet">
+  <!-- Favicon -->
+  <link href="{{ url_for('static', filename='assets/img/brand/favicon.png') }}" rel="icon" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link href="{{ url_for('static', filename='assets/js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}"
+    rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="{{ url_for('static', filename='assets/css/argon-dashboard.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/css/udapi-dashboard.css') }}" rel="stylesheet">
   {% endblock stylesheets %}
 
   {% endblock head %}
@@ -54,16 +58,17 @@
   </div>
 
   {% block javascripts %}
-    <!-- Core -->
-    <script src="{{ url_for('static', filename='assets/js/plugins/jquery/dist/jquery.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+  <!-- Core -->
+  <script src="{{ url_for('static', filename='assets/js/plugins/jquery/dist/jquery.min.js') }}"></script>
+  <script
+    src="{{ url_for('static', filename='assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 
-    <!-- Optional JS -->
-    <script src="{{ url_for('static', filename='assets/js/plugins/chart.js/dist/Chart.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/plugins/chart.js/dist/Chart.extension.js') }}"></script>
-    
-    <!-- Argon JS -->
-    <script src="{{ url_for('static', filename='assets/js/argon-dashboard.min.js') }}"></script>
+  <!-- Optional JS -->
+  <script src="{{ url_for('static', filename='assets/js/plugins/chart.js/dist/Chart.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/plugins/chart.js/dist/Chart.extension.js') }}"></script>
+
+  <!-- Argon JS -->
+  <script src="{{ url_for('static', filename='assets/js/argon-dashboard.min.js') }}"></script>
   {% endblock javascripts %}
 
 </body>

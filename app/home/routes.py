@@ -12,10 +12,10 @@ from jinja2 import TemplateNotFound
 
 @blueprint.route('/index')
 def index():
-    if not "username" in session:
-        return redirect(url_for('base_blueprint.login'))
+    # if not "username" in session:
+    #     return redirect(url_for('base_blueprint.login'))
         
-    databases=[{"name":"test-student", "type":"mysql"},{"name":"test2", "type":"mongo"},{"name":"test3", "type":"mongo"},{"name":"test4", "type":"mysql"},{"name":"joan","type":"mongo"},{"name":"test4", "type":"mysql"},{"name":"joan","type":"mongo"}]
+    databases=[{"name":"test-student", "type":"mysql","entitySets":['professors','lizards','mimosas']},{"name":"test2", "type":"mongo","entitySets":['swords','reverse']},{"name":"test3", "type":"mongo","entitySets":["Lorem", "ipsum", "dolor"]},{"name":"test-student", "type":"mysql","entitySets":['professors','lizards','mimosas']},{"name":"test2", "type":"mongo","entitySets":['bread','swords']},{"name":"test3", "type":"mongo","entitySets":["Lorem", "ipsum", "dolor"]}]
     return render_template('index.html', databases=databases)
 
     # if not current_user.is_authenticated:

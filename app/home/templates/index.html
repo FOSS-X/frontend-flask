@@ -12,127 +12,68 @@
 
 {% include "site_template/top-stats.html" %}
 
-<div class="container-fluid bg-gradient-dark mt--7" style="height: 100vh;">
+<div class="container-fluid bg-gradient-dark mt--7" style="min-height: 100vh;">
   <div class="row">
     <div class="col-xl-12 text-white display-3 pb-2">Your Databases</div>
   </div>
-  {% for i in range(0, databases| length // 4) : %}
-  <div class="row">
-    <div class="col-xl-3 mb-3">
-      <div class="card shadow">
-        <div class="card-header h3 bg-translucent-success text-white card-title">
-          {{ databases[i*4].name }}
-        </div>
-        <div class="card-body">
-          {{ databases[i*4].type }}
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 mb-3">
-      <div class="card shadow">
-        <div class="card-header h3 bg-translucent-success text-white card-title">
-          {{ databases[i*4+1].name }}
-        </div>
-        <div class="card-body">
-          {{ databases[i*4+1].type }}
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 mb-3">
-      <div class="card shadow">
-        <div class="card-header h3 bg-translucent-success text-white card-title">
-          {{ databases[i*4+2].name }}
-        </div>
-        <div class="card-body">
-          {{ databases[i*4+2].type }}
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 mb-3">
-      <div class="card shadow">
-        <div class="card-header h3 bg-translucent-success text-white card-title">
-          {{ databases[i*4+3].name }}
-        </div>
-        <div class="card-body">
-          {{ databases[i*4+3].type }}
-        </div>
-      </div>
-    </div>
-  </div>
-  {% endfor %}
 
-  {% if databases| length % 4 == 1 :%}
   <div class="row">
-    <div class="col-xl-3 mb-6">
-      <div class="card shadow">
-        <div class="card-header h3 bg-translucent-success text-white card-title">
-          {{ databases[-1].name }}
+    <div class="col-xl-4 mb-4 pb-2">
+      <div class="card">
+        <div class="card-header mx-auto">
+          <a data-toggle="modal" data-target="#createNewDatabase">
+            <i class="fas fa-plus-circle p-3" style="font-size: 5rem; color:#3498db"></i>
+          </a>
         </div>
-        <div class="card-body">
-          {{ databases[-1].type }}
+      </div>
+    </div>
+    {% for database in databases: %}
+    <div class="col-xl-4 mb-4 pb-2">
+      <div class="card shadow">
+        <div class="card-header text-white dashboard-card-header">
+          <span> {{ database.name| upper }} </span>
+          <span class="text-right float-right " style="font-size: small;"> <i class="fas fa-external-link-alt pr-1">
+            </i><i class="fas fa-trash">
+            </i> </span>
+          <div style="font-size:0.85rem;"><i class="fas fa-database pr-2">
+            </i>{{ database.type| upper }}</div>
+        </div>
+        <ul class="list-group list-group-flush" style="padding: 0.6rem,1rem;">
+          <li class="list-group-item dashboard-list-group-item" style="color: #28df28;"><i
+              class="fas fa-plus pr-2"></i>Create Entity
+            Set</li>
+          {% for entitySet in database.entitySets: %}
+          <li class="list-group-item dashboard-list-group-item">{{ entitySet }}
+            <span class="float-right" style="font-size: small;"> <i class="fas fa-edit pl-1"
+                style="color: #3498db ;"></i><i class="fas fa-trash pl-1" style="color: #ec7063 ;"></i>
+            </span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="modal fade" id="createNewDatabase" tabindex="-1" role="dialog" aria-labelledby="createNewDatabase"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createNewDatabase">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  {% endif %}
-  {% if databases| length % 4 == 2 :%}
-  <div class="row">
-    <div class="col-xl-3 mb-6">
-      <div class="card shadow">
-        <div class="card-header h3 bg-translucent-success text-white card-title">
-          {{ databases[-1].name }}
-        </div>
-        <div class="card-body">
-          {{ databases[-1].type }}
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 mb-6">
-      <div class="card shadow">
-        <div class="card-header h3 bg-translucent-success text-white card-title">
-          {{ databases[-2].name }}
-        </div>
-        <div class="card-body">
-          {{ databases[-2].type }}
-        </div>
-      </div>
-    </div>
-  </div>
-  {% endif %}
-  {% if databases| length % 4 == 3 :%}
-  <div class="row">
-    <div class="col-xl-3 mb-6">
-      <div class="card shadow">
-        <div class="card-header h3 bg-translucent-success text-white card-title">
-          {{ databases[-1].name }}
-        </div>
-        <div class="card-body">
-          {{ databases[-1].type }}
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 mb-6">
-      <div class="card shadow">
-        <div class="card-header h3 bg-translucent-success text-white card-title">
-          {{ databases[-2].name }}
-        </div>
-        <div class="card-body">
-          {{ databases[-2].type }}
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 mb-6">
-      <div class="card shadow">
-        <div class="card-header h3 bg-translucent-success text-white card-title">
-          {{ databases[-3].name }}
-        </div>
-        <div class="card-body">
-          {{ databases[-3].type }}
-        </div>
-      </div>
-    </div>
-  </div>
-  {% endif %}
 
 </div>
 
