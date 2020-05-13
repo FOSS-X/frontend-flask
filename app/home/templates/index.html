@@ -12,60 +12,129 @@
 
 {% include "site_template/top-stats.html" %}
 
-<div class="container-fluid bg-gradient-dark mt--7" style="height: 100vh;
-width: 100vw;">
+<div class="container-fluid bg-gradient-dark mt--7" style="height: 100vh;">
   <div class="row">
     <div class="col-xl-12 text-white display-3 pb-2">Your Databases</div>
   </div>
+  {% for i in range(0, databases| length // 4) : %}
   <div class="row">
-    <div class="col-xl-5 mb-5">
+    <div class="col-xl-3 mb-3">
       <div class="card shadow">
         <div class="card-header h3 bg-translucent-success text-white card-title">
-          Database Name
+          {{ databases[i*4].name }}
         </div>
         <div class="card-body">
-          Type
+          {{ databases[i*4].type }}
         </div>
       </div>
     </div>
-
-    <div class="col-xl-5 mb-5">
+    <div class="col-xl-3 mb-3">
       <div class="card shadow">
         <div class="card-header h3 bg-translucent-success text-white card-title">
-          Database Name
+          {{ databases[i*4+1].name }}
         </div>
         <div class="card-body">
-          Type
+          {{ databases[i*4+1].type }}
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 mb-3">
+      <div class="card shadow">
+        <div class="card-header h3 bg-translucent-success text-white card-title">
+          {{ databases[i*4+2].name }}
+        </div>
+        <div class="card-body">
+          {{ databases[i*4+2].type }}
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 mb-3">
+      <div class="card shadow">
+        <div class="card-header h3 bg-translucent-success text-white card-title">
+          {{ databases[i*4+3].name }}
+        </div>
+        <div class="card-body">
+          {{ databases[i*4+3].type }}
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xl-5 mb-5">
-      <div class="card shadow">
-        <div class="card-header h3 bg-translucent-success text-white card-title">
-          Database Name
-        </div>
-        <div class="card-body">
-          Type
-        </div>
-      </div>
-    </div>
+  {% endfor %}
 
-    <div class="col-xl-5 mb-5">
+  {% if databases| length % 4 == 1 :%}
+  <div class="row">
+    <div class="col-xl-3 mb-6">
       <div class="card shadow">
         <div class="card-header h3 bg-translucent-success text-white card-title">
-          Database Name
+          {{ databases[-1].name }}
         </div>
         <div class="card-body">
-          Type
+          {{ databases[-1].type }}
         </div>
       </div>
     </div>
   </div>
+  {% endif %}
+  {% if databases| length % 4 == 2 :%}
+  <div class="row">
+    <div class="col-xl-3 mb-6">
+      <div class="card shadow">
+        <div class="card-header h3 bg-translucent-success text-white card-title">
+          {{ databases[-1].name }}
+        </div>
+        <div class="card-body">
+          {{ databases[-1].type }}
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 mb-6">
+      <div class="card shadow">
+        <div class="card-header h3 bg-translucent-success text-white card-title">
+          {{ databases[-2].name }}
+        </div>
+        <div class="card-body">
+          {{ databases[-2].type }}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% if databases| length % 4 == 3 :%}
+  <div class="row">
+    <div class="col-xl-3 mb-6">
+      <div class="card shadow">
+        <div class="card-header h3 bg-translucent-success text-white card-title">
+          {{ databases[-1].name }}
+        </div>
+        <div class="card-body">
+          {{ databases[-1].type }}
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 mb-6">
+      <div class="card shadow">
+        <div class="card-header h3 bg-translucent-success text-white card-title">
+          {{ databases[-2].name }}
+        </div>
+        <div class="card-body">
+          {{ databases[-2].type }}
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 mb-6">
+      <div class="card shadow">
+        <div class="card-header h3 bg-translucent-success text-white card-title">
+          {{ databases[-3].name }}
+        </div>
+        <div class="card-body">
+          {{ databases[-3].type }}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
 </div>
-
-
 
 </div>
 

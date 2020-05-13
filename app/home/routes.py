@@ -16,8 +16,8 @@ def index():
     
     if not current_user.is_authenticated:
         return redirect(url_for('base_blueprint.login'))
-
-    return render_template('index.html')
+    databases=[{"name":"test-student", "type":"mysql"},{"name":"test2", "type":"mongo"},{"name":"test3", "type":"mongo"},{"name":"test4", "type":"mysql"},{"name":"joan","type":"mongo"},{"name":"test4", "type":"mysql"},{"name":"joan","type":"mongo"}]
+    return render_template('index.html', databases=databases)
 
 @blueprint.route('/<template>')
 def route_template(template):

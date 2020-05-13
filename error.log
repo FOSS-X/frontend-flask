@@ -508,3 +508,1378 @@ INFO:werkzeug:127.0.0.1 - - [10/May/2020 18:25:35] "[37mGET /index HTTP/1.1[0m
 INFO:werkzeug:127.0.0.1 - - [10/May/2020 18:25:35] "[37mGET /static/assets/img/brand/favicon.png HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [10/May/2020 18:26:25] "[37mGET /index HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [10/May/2020 18:26:25] "[37mGET /static/assets/img/brand/favicon.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:2000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:46] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:47] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:47] "[37mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:47] "[37mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:47] "[37mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:47] "[37mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:47] "[37mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:47] "[37mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:48] "[37mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:48] "[37mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:49] "[37mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:49] "[37mGET /static/assets/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:05:50] "[37mGET /static/assets/img/brand/favicon.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:01] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:02] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:02] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:02] "[37mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:02] "[37mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:17] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:18] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:18] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:18] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:18] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:18] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:18] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:18] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:18] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:18] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:06:18] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:21:01] "[33mGET /static/assets/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:22:29] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:22:29] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:22:29] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:22:29] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:22:29] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:22:29] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:22:29] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:22:29] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:22:29] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:22:29] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:22:29] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:22:30] "[33mGET /static/assets/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:23:07] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:23:07] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:23:07] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:23:07] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:23:07] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:23:07] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:23:07] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:23:07] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:23:07] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:23:07] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:23:07] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:26:42] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:26:42] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:26:42] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:26:42] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:26:42] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:26:42] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:26:42] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:26:42] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:26:42] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:26:42] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:26:42] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:22] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:22] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:22] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:22] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:22] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:22] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:22] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:23] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:23] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:23] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:23] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:31] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:31] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:31] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:31] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:31] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:31] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:31] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:31] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:31] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:31] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:27:31] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:22] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:22] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:22] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:22] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:22] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:22] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:22] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:22] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:22] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:22] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:22] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:45] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:45] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:45] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:45] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:45] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:45] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:45] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:45] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:45] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:45] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:28:45] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:04] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:04] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:04] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:04] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:04] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:04] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:04] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:04] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:04] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:04] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:04] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:31] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:31] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:31] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:31] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:31] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:31] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:31] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:31] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:32] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:32] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:32] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:33] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:33] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:33] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:33] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:33] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:33] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:33] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:33] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:33] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:33] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:33] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:44] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:44] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:44] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:44] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:44] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:44] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:44] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:44] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:45] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:45] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:29:45] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:30:49] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:30:49] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:30:49] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:30:49] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:30:49] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:30:49] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:30:49] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:30:49] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:30:49] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:30:49] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:30:49] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:02] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:02] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:03] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:03] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:03] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:03] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:03] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:03] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:03] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:03] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:03] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:14] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:15] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:15] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:15] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:15] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:15] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:15] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:15] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:15] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:15] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:15] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:52] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:52] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:52] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:52] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:52] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:52] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:52] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:52] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:52] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:52] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:31:52] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:32:04] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:32:04] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:32:04] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:32:04] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:32:04] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:32:04] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:32:04] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:32:04] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:32:04] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:32:04] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 09:32:04] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases)
+TypeError: render_template() takes 1 positional argument but 2 were given
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 10:53:23] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 10:53:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', **databases)
+TypeError: render_template() argument after ** must be a mapping, not list
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 10:55:04] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python36\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in template
+    {%iterator=0%}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'iterator'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 10:57:48] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python36\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 24, in template
+    {% databases[i*2].name%}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'databases'. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:05:31] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python36\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 24, in template
+    {% databases[i*2].name%}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'databases'. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:05:32] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python36\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 24, in template
+    {% databases[i*2].name%}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'databases'. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:06:07] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python36\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in template
+    {% for i in range(0,len({{databases}})//2) %}
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:07:29] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python36\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in template
+    {% for i in range(0,len({{databases}})//2) %}
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:07:30] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python36\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in template
+    {% for i in range(0,len({{databases}})//2): %}
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:07:55] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python36\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in template
+    {% for i in range(0,len({{databases}})//2): %}
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:09:24] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python36\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 24, in template
+    {% databases[i*2].name%}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'databases'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:16:07] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:16:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 1, in top-level template code
+    {% extends "base_site.html" %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\base\templates\base_site.html", line 52, in top-level template code
+    {% block content %}{% endblock content %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in block "content"
+    {% for i in range(0,len(databases)//2) : %}
+jinja2.exceptions.UndefinedError: 'len' is undefined
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:23:53] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 1, in top-level template code
+    {% extends "base_site.html" %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\base\templates\base_site.html", line 52, in top-level template code
+    {% block content %}{% endblock content %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in block "content"
+    {% for i in range(0,len(databases)//2) : %}
+jinja2.exceptions.UndefinedError: 'len' is undefined
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:23:54] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 1, in top-level template code
+    {% extends "base_site.html" %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\base\templates\base_site.html", line 52, in top-level template code
+    {% block content %}{% endblock content %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in block "content"
+    {% for i in range(0,len(databases)//2) : %}
+jinja2.exceptions.UndefinedError: 'len' is undefined
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:23:54] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 1, in top-level template code
+    {% extends "base_site.html" %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\base\templates\base_site.html", line 52, in top-level template code
+    {% block content %}{% endblock content %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in block "content"
+    {% for i in range(0,len(databases)//2) : %}
+jinja2.exceptions.UndefinedError: 'len' is undefined
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:23:55] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 1, in top-level template code
+    {% extends "base_site.html" %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\base\templates\base_site.html", line 52, in top-level template code
+    {% block content %}{% endblock content %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in block "content"
+    {% for i in range(0,len(databases)//2) : %}
+jinja2.exceptions.UndefinedError: 'len' is undefined
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:23:55] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 1, in top-level template code
+    {% extends "base_site.html" %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\base\templates\base_site.html", line 52, in top-level template code
+    {% block content %}{% endblock content %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in block "content"
+    {% for i in range(0,len(databases)//2) : %}
+jinja2.exceptions.UndefinedError: 'len' is undefined
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:23:55] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 1, in top-level template code
+    {% extends "base_site.html" %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\base\templates\base_site.html", line 52, in top-level template code
+    {% block content %}{% endblock content %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in block "content"
+    {% for i in range(0, length(databases)//2) : %}
+jinja2.exceptions.UndefinedError: 'length' is undefined
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:27:47] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 1, in top-level template code
+    {% extends "base_site.html" %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\base\templates\base_site.html", line 52, in top-level template code
+    {% block content %}{% endblock content %}
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 19, in block "content"
+    {% for i in range(0, databases|length // 2) : %}
+jinja2.exceptions.UndefinedError: 'length' is undefined
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:31:47] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:04] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:04] "[37mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:04] "[37mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:05] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:05] "[37mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:05] "[37mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:05] "[37mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:05] "[37mGET /static/assets/js/plugins/nucleo/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:05] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:05] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:05] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:05] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:05] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:35:05] "[37mGET /static/assets/img/brand/favicon.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:36:49] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:36:49] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:36:49] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:36:49] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:36:49] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:36:49] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:36:49] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:36:49] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:36:50] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:36:50] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:36:50] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:47] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:47] "[37mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:47] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:47] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:47] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:47] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:47] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:47] "[37mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:47] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:47] "[37mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:47] "[37mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:49] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:49] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:49] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:49] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:49] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:49] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:49] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:49] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:49] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:49] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:37:49] "[37mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:39:13] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:39:13] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:39:13] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:39:13] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:39:13] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:39:13] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:39:13] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:39:13] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:39:13] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:39:13] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:39:13] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /index [GET]
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python36\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\routes.py", line 20, in index
+    return render_template('index.html', databases=databases)
+  File "c:\python36\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\python36\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "c:\python36\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python36\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sanjitha\flask frontend\frontend-flask\app\home\templates\index.html", line 44, in template
+    {% if databases| length % 2 is not 0 :%}
+jinja2.exceptions.TemplateSyntaxError: expected token 'name', got 'integer'
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:39:42] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:01] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:01] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:01] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:01] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:01] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:01] "[37mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:01] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:01] "[37mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:01] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:01] "[37mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:01] "[37mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:29] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:29] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:29] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:29] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:29] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:29] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:29] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:29] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:29] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:29] "[37mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:29] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:40] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:40] "[37mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:40] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:40] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:40] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:40] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:40] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:40] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:40] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:40] "[37mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:40:40] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:41:03] "[33mGET /static/assets/css/dashboard-free.css.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:17] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:17] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:17] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:17] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:17] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:17] "[37mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:17] "[37mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:17] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:17] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:17] "[37mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:17] "[37mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:19] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:19] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:19] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:19] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:19] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:19] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:19] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:19] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:19] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:19] "[37mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:19] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:32] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:32] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:33] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:33] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:33] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:33] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:33] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:33] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:33] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:33] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:33] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:34] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:34] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:34] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:34] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:34] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:34] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:34] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:34] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:34] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:34] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:34] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:53] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:53] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:53] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:53] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:54] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:54] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:54] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:54] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:54] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:54] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:42:54] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:40] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:41] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:41] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:41] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:41] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:41] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:41] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:41] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:41] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:41] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:41] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:54] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:54] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:54] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:54] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:54] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:54] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:54] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:54] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:54] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:54] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:43:54] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:46:52] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:46:52] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:46:52] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:46:52] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:46:52] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:46:52] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:46:52] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:46:52] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:46:52] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:46:53] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:46:53] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:02] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:03] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:03] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:03] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:03] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:03] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:03] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:03] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:03] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:03] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:03] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:29] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:29] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:29] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:29] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:29] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:29] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:29] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:29] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:29] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:29] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:29] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:31] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:31] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:31] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:31] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:31] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:31] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:31] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:31] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:31] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:31] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:31] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:32] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:32] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:32] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:32] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:32] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:32] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:32] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:32] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:32] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:37] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:37] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:37] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:37] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:37] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:37] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:37] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:37] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:37] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:37] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:47:37] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:48:25] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:48:25] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:48:25] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:48:25] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:48:25] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:48:25] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:48:25] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:48:25] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:48:25] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:48:25] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:48:25] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:11] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:12] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:12] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:12] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:12] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:12] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:12] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:12] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:12] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:12] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:12] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:13] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:13] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:13] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:13] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:13] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:13] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:13] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:13] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:13] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:13] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:13] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:21] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:21] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:21] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:21] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:21] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:21] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:21] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:21] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:21] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:21] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:21] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:49] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:49] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:49] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:49] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:49] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:49] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:49] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:50] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:50] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:50] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:49:50] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:50:05] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:50:05] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:50:05] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:50:05] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:50:05] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:50:06] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:50:06] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:50:06] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:50:06] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:50:06] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:50:06] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:38] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:38] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:38] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:38] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:38] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:38] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:38] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:38] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:38] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:38] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:38] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:48] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:48] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:48] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:48] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:48] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:48] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:48] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:48] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:48] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:48] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:51:48] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:22] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:22] "[37mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:22] "[37mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:22] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:22] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:22] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:22] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:22] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:22] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:22] "[37mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:22] "[37mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:22] "[37mGET /static/assets/img/brand/favicon.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:34] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:34] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:34] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:34] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:34] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:34] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:34] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:34] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:34] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:34] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:57:34] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:58:57] "[37mGET /index HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:58:57] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:58:57] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:58:57] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:58:57] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:58:57] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:58:57] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:58:57] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:58:57] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:58:57] "[36mGET /static/assets/img/theme/team-1-800x800.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 11:58:57] "[36mGET /static/assets/img/brand/blue.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:05:17] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:05:17] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:05:18] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:05:18] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:05:18] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:05:18] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:05:18] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:05:18] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:05:18] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:05:18] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:05:44] "[37mGET /create_user HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:06:11] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:08:01] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:08:01] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:08:01] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:08:01] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:08:01] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:08:01] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:08:01] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:08:01] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:08:01] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:2000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:06] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:06] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:06] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:06] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:06] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:06] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:06] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:06] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:06] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:30] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:30] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:30] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:30] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:30] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:30] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:30] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:30] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:30] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:38] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:38] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:38] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:38] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:38] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:38] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:38] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:38] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:09:38] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:14] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:14] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:14] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:14] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:14] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:14] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:14] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:14] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:14] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:32] "[37mGET /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:33] "[36mGET /static/assets/js/plugins/%40fortawesome/fontawesome-free/css/all.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:33] "[36mGET /static/assets/js/plugins/nucleo/css/nucleo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:33] "[36mGET /static/assets/css/argon-dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:33] "[36mGET /static/assets/js/plugins/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:33] "[36mGET /static/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:33] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:33] "[36mGET /static/assets/js/plugins/chart.js/dist/Chart.extension.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:10:33] "[36mGET /static/assets/js/argon-dashboard.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:11:00] "[37mGET /create_user HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2020 12:11:04] "[37mGET /login HTTP/1.1[0m" 200 -
