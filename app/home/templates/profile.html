@@ -18,7 +18,7 @@
     <div class="container-fluid d-flex align-items-center">
         <div class="row">
         <div class="col-lg-7 col-md-10">
-            <h1 class="display-2 text-white">Hello {{ current_user.username }}</h1>
+            <h1 class="display-2 text-white">Hello {{ session['username'] }}</h1>
             <p class="text-white mt-0 mb-5">
                 This is your profile page. 
             You can see the progress you've made with your work and manage your projects or assigned tasks</p>
@@ -102,21 +102,21 @@
                 </div>
                 <div class="card-body">
                 <form>
-                    <h6 class="heading-small text-muted mb-4">User information - {{ current_user.id }}</h6>
+                    <h6 class="heading-small text-muted mb-4">User information - {{ 123 }}</h6>
                     <div class="pl-lg-4">
                     <div class="row">
                         <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-username">Username</label>
                             <input type="text" id="input-username" class="form-control form-control-alternative" 
-                                   placeholder="Username" value="{{ current_user.username }}">
+                                   placeholder="Username" value="{{ session['username'] }}">
                         </div>
                         </div>
                         <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-email">Email address</label>
                             <input type="email" id="input-email" class="form-control form-control-alternative" 
-                                   placeholder="Email" value="{{ current_user.email }}">
+                                   placeholder="Email" value="{{ session['email'] }}">
                         </div>
                         </div>
                     </div>
