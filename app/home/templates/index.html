@@ -3,8 +3,8 @@
 {% block stylesheets %}
 {{ super() }}
 {% endblock stylesheets %}
+
 {% block content %}
-<<<<<<< HEAD
 
 {% include "site_template/navigation.html" %}
 
@@ -40,24 +40,6 @@
   <div class="row">
     <div class="col-xl-12 text-white display-3 pb-2">Your Databases</div>
   </div>
-=======
-{% include
-"site_template/navigation.html" %}
-{% include "site_template/top-stats.html"%}
-{% with messages = get_flashed_messages() %}
-{% if messages %}
-{% for msg in
-messages %}
-<div class="alert alert-primary" role="alert">
-    {{msg}}
-</div>
-{% endfor %} {% endif %} {% endwith %}
-
-<div class="container-fluid bg-gradient-dark mt--7" style="min-height: 100vh;">
-    <div class="row">
-        <div class="col-xl-12 text-white display-3 pb-2">Your Databases</div>
-    </div>
->>>>>>> d224f0c8be40f2c8c77e8d2b5b2b6e5621698894
 
     <div class="row">
         <div class="col-xl-4 mb-4 pb-2">
@@ -93,8 +75,7 @@ messages %}
                             class="fas fa-plus pr-2"></i>Create Entity Set
                     </li>
                     {% for entitySet in database.entitySets: %}
-                    <li class="list-group-item dashboard-list-group-item">{{
-                        entitySet }}
+                    <li class="list-group-item dashboard-list-group-item">{{ entitySet }}
                         <span class="float-right" style="font-size: small;"> <i
                                 class="fas fa-edit pl-3"
                                 style="color: #3498db ;"></i><i class="fas
@@ -105,7 +86,7 @@ messages %}
                 </ul>
             </div>
         </div>
-
+  
         <!-- Modals -->
 
         <!-- Modal for deleting database -->
@@ -127,7 +108,6 @@ messages %}
                             upper }} </strong>?
                         <br>
                         Once deleted the database cannot be recovered.
-                    </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary"
                             data-dismiss="modal">Cancel</button>
@@ -137,11 +117,11 @@ messages %}
                         </form>
                     </div>
                 </div>
+              </div>
             </div>
+            {% endfor %}
         </div>
 
-
-<<<<<<< HEAD
     <!-- Modal for Creating New Database -->
     <div class="modal fade" id="createNewDatabase" tabindex="-1" role="dialog" aria-labelledby="createNewDatabase"
       aria-hidden="true">
@@ -167,51 +147,14 @@ messages %}
             <button type="submit" name='createDB' class="btn btn-primary">Create Database</button>
           </div>
         </form>
-=======
-        {% endfor %}
-
-        <!-- Modal for Creating New Database -->
-        <div class="modal fade" id="createNewDatabase" tabindex="-1"
-            role="dialog" aria-labelledby="createNewDatabase"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="createNewDatabase">Create a
-                            new Database</h5>
-                        <button type="button" class="close" data-dismiss="modal"
-                            aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="" method="post">
-                            {{ createDbForm.hidden_tag() }}
-                            {{ createDbForm.database_type.label }}
-                            {{ createDbForm.database_type(class_="form-control
-                            pb-2") }}
-                            <div class="p-3"></div>
-                            {{ createDbForm.database_name.label }}
-                            {{createDbForm.database_name(size=20,
-                            class_="form-control", placeholder="Database Name")
-                            }}
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary"
-                                data-dismiss="modal">Close</button>
-                            <button type="submit" name='createDB' class="btn
-                                btn-primary">Create
-                                Database</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
->>>>>>> d224f0c8be40f2c8c77e8d2b5b2b6e5621698894
         </div>
 
     </div>
 
 </div>
 
-{% endblock content %} {% block javascripts %} {{ super()}} {% endblock
-javascripts %}
+{% endblock content %} 
+
+{% block javascripts %} 
+{{ super()}} 
+{% endblock javascripts %}
