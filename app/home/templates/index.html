@@ -32,7 +32,7 @@
       <div class="card">
         <div class="card-header mx-auto">
           <a data-toggle="modal" data-target="#createNewDatabase">
-            <i class="fas fa-plus-circle p-3 editable-icon" style="font-size: 5rem; color:#3498db"></i>
+            <i class="fas fa-plus-circle p-3 ui-icon" style="font-size: 5rem; color:#3498db"></i>
           </a>
         </div>
       </div>
@@ -43,15 +43,15 @@
         <div class="card-header text-white dashboard-card-header">
           <span> {{ database.name| upper }} </span>
           <span class="text-right float-right ">
-            <i class="fas fa-external-link-alt pr-3"></i>
+            <i class="fas fa-external-link-alt pr-3 ui-icon-grow"></i>
             <a data-toggle="modal" data-target="#deleteDatabase{{database.name}}"> <i
-                class="fas fa-trash text-white"></i></a>
+                class="fas fa-trash text-white ui-icon"></i></a>
           </span>
           <div style="font-size:0.85rem;"><i class="fas fa-database pr-2">
             </i>{{ database.type| upper }}</div>
         </div>
         <ul class="list-group list-group-flush" style="padding: 0.6rem,1rem;">
-          <li class="list-group-item dashboard-list-group-item" style="color: #28df28;"><i
+          <li class="list-group-item dashboard-list-group-item ui-icon-grow" style="color: #28df28;"><i
               class="fas fa-plus pr-2"></i>Create Entity
             Set</li>
           {% for entitySet in database.entitySets: %}
