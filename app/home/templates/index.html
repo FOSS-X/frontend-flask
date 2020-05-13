@@ -3,6 +3,7 @@
 {% block stylesheets %}
 {{ super() }}
 {% endblock stylesheets %}
+
 {% block content %}
 
 {% include "site_template/navigation.html" %}
@@ -33,7 +34,6 @@
     {% endfor %}
     {% endif %}
     {% endwith %}
-
 
     <div class="row">
         <div class="col-xl-12 text-white display-3 pb-2">Your Databases</div>
@@ -107,21 +107,19 @@
                             upper }} </strong>?
                         <br>
                         Once deleted the database cannot be recovered.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary"
-                            data-dismiss="modal">Cancel</button>
-                        <form action="/deleteDB" method="DELETE">
-                            <button type="submit" class="btn btn-primary">Delete
-                                Database</button>
-                        </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-dismiss="modal">Cancel</button>
+                            <form action="/deleteDB" method="DELETE">
+                                <button type="submit" class="btn btn-primary">Delete
+                                    Database</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-
-
-        {% endfor %}
 
         <!-- Modal for Creating New Database -->
         <div class="modal fade" id="createNewDatabase" tabindex="-1"
@@ -145,7 +143,7 @@
                             pb-2") }}
                             <div class="p-3"></div>
                             {{ createDbForm.database_name.label }}
-                            {{createDbForm.database_name(size=20,
+                            {{ createDbForm.database_name(size=20,
                             class_="form-control", placeholder="Database Name")
                             }}
                         </div>
@@ -153,17 +151,17 @@
                             <button type="button" class="btn btn-secondary"
                                 data-dismiss="modal">Close</button>
                             <button type="submit" name='createDB' class="btn
-                                btn-primary">Create
-                                Database</button>
+                                btn-primary">Create Database</button>
                         </div>
                     </form>
                 </div>
+
             </div>
+
         </div>
 
-    </div>
+        {% endblock content %}
 
-</div>
-
-{% endblock content %} {% block javascripts %} {{ super()}} {% endblock
-javascripts %}
+        {% block javascripts %}
+        {{ super()}}
+        {% endblock javascripts %}
