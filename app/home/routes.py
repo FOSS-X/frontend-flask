@@ -34,7 +34,7 @@ def index():
     # # Initializing all forms for rendering
     createDbForm = CreateDatabaseForm()
 
-    # Retriving all the Databases Stored for the user from UDAPI
+    Retriving all the Databases Stored for the user from UDAPI
     url = UDAPI_URL + "/all/databases"
     headers = {'jwtToken': session['jwtToken']}
     response = requests.get(url, headers=headers)
@@ -67,7 +67,8 @@ def index():
                 print(user_data['message'])
                 return render_template('errors/page_500.html'), 500
 
-
+    # databases = [{"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['swords', 'reverse']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]},
+    #              {"name": "test-student", "type": "mysql", "entitySets": ['professors', 'lizards', 'mimosas']}, {"name": "test2", "type": "mongo", "entitySets": ['bread', 'swords']}, {"name": "test3", "type": "mongo", "entitySets": ["Lorem", "ipsum", "dolor"]}]
 
     # Creating new Database by sending request to UDAPI
     if 'createDB' in request.form:
@@ -113,6 +114,7 @@ def route_template(template):
 
     except:
         return render_template('error-500.html'), 500
+
 
 @blueprint.app_errorhandler(404)
 def handle_exceptions(e):

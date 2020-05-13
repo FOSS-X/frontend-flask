@@ -1,11 +1,8 @@
 {% extends "base_site.html" %}
-
 {% block title %} Dashboard {% endblock title %}
-
 {% block stylesheets %}
 {{ super() }}
 {% endblock stylesheets %}
-
 {% block content %}
 
 {% include "site_template/navigation.html" %}
@@ -43,70 +40,87 @@
     <div class="col-xl-12 text-white display-3 pb-2">Your Databases</div>
   </div>
 
-  <div class="row">
-    <div class="col-xl-4 mb-4 pb-2">
-      <div class="card">
-        <div class="card-header mx-auto">
-          <a data-toggle="modal" data-target="#createNewDatabase">
-            <i class="fas fa-plus-circle p-3 ui-icon" style="font-size: 5rem; color:#3498db"></i>
-          </a>
+    <div class="row">
+        <div class="col-xl-4 mb-4 pb-2">
+            <div class="card">
+                <div class="card-header mx-auto">
+                    <a data-toggle="modal" data-target="#createNewDatabase">
+                        <i class="fas fa-plus-circle p-3 ui-icon"
+                            style="font-size: 5rem; color:#3498db"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    {% for database in databases: %}
-    <div class="col-xl-4 mb-4 pb-2">
-      <div class="card shadow">
-        <div class="card-header text-white dashboard-card-header">
-          <span> {{ database.name| upper }} </span>
-          <span class="text-right float-right ">
-            <i class="fas fa-external-link-alt pr-3 ui-icon-grow"></i>
-            <a data-toggle="modal" data-target="#deleteDatabase{{database.name}}"> <i
-                class="fas fa-trash text-white ui-icon"></i></a>
-          </span>
-          <div style="font-size:0.85rem;"><i class="fas fa-database pr-2">
-            </i>{{ database.type| upper }}</div>
+        {% for database in databases: %}
+        <div class="col-xl-4 mb-4 pb-2">
+            <div class="card shadow">
+                <div class="card-header text-white dashboard-card-header">
+                    <span> {{ database.name| upper }} </span>
+                    <span class="text-right float-right">
+                        <i class="fas fa-external-link-alt pr-3 ui-icon-grow"></i>
+                        <a data-toggle="modal"
+                            data-target="#deleteDatabase{{database.name}}">
+                            <i class="fas fa-trash text-white ui-icon"></i>
+                        </a>
+                    </span>
+                    <div style="font-size:0.85rem;"><i class="fas fa-database
+                            pr-2">
+                        </i>{{ database.type| upper }}</div>
+                </div>
+                <ul class="list-group list-group-flush" style="padding:
+                    0.6rem,1rem;">
+                    <li class="list-group-item dashboard-list-group-item
+                        ui-icon-grow" style="color: #28df28;"><i
+                            class="fas fa-plus pr-2"></i>Create Entity Set
+                    </li>
+                    {% for entitySet in database.entitySets: %}
+                    <li class="list-group-item dashboard-list-group-item">{{
+                        entitySet }}
+                        <span class="float-right" style="font-size: small;"> <i
+                                class="fas fa-edit pl-3"
+                                style="color: #3498db ;"></i><i class="fas
+                                fa-trash pl-1" style="color: #ec7063 ;"></i>
+                        </span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
-        <ul class="list-group list-group-flush" style="padding: 0.6rem,1rem;">
-          <li class="list-group-item dashboard-list-group-item ui-icon-grow" style="color: #28df28;"><i
-              class="fas fa-plus pr-2"></i>Create Entity
-            Set</li>
-          {% for entitySet in database.entitySets: %}
-          <li class="list-group-item dashboard-list-group-item">{{ entitySet }}
-            <span class="float-right" style="font-size: small;"> <i class="fas fa-edit pl-1"
-                style="color: #3498db ;"></i><i class="fas fa-trash pl-1" style="color: #ec7063 ;"></i>
-            </span>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <!-- Modal for deleting database -->
-    <div class="modal fade" id="deleteDatabase{{database.name}}" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="deleteDatabase"> <i class="fas fa-trash text-red pr-3"></i>Delete Database</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body style=" font-family: Roboto;">
-            Are you sure you want to delete <strong>{{database.name| upper }} </strong>?
-            <br>
-            Once deleted the database cannot be recovered.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-            <form action="/deleteDB" method="DELETE">
-              <button type="submit" class="btn btn-primary">Delete Database</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
 
-    <!-- Modals -->
+        <!-- Modals -->
+
+        <!-- Modal for deleting database -->
+        <div class="modal fade" id="deleteDatabase{{database.name}}"
+            tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteDatabase"> <i
+                                class="fas fa-trash text-red pr-3"></i>Delete
+                            Database</h5>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <d class="modal-body style="font-family: Roboto;">
+                        Are you sure you want to delete <strong>{{database.name|
+                            upper }} </strong>?
+                        <br>
+                        Once deleted the database cannot be recovered.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">Cancel</button>
+                        <form action="/deleteDB" method="DELETE">
+                            <button type="submit" class="btn btn-primary">Delete
+                                Database</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     <!-- Modal for Creating New Database -->
     <div class="modal fade" id="createNewDatabase" tabindex="-1" role="dialog" aria-labelledby="createNewDatabase"
@@ -134,16 +148,10 @@
           </div>
         </form>
         </div>
-      </div>
+
     </div>
-  </div>
 
 </div>
 
-</div>
-
-{% endblock content %}
-
-{% block javascripts %}
-{{ super()}}
-{% endblock javascripts %}
+{% endblock content %} {% block javascripts %} {{ super()}} {% endblock
+javascripts %}
