@@ -12,3 +12,19 @@
 .modal-title{
     font-size: 1.5rem;
 }
+
+.ui-icon { transition: all .9s ease-in-out; }
+.ui-icon:hover { 
+    transform: rotateY(180deg);
+    transition: 0.9s;
+
+ }
+ .ui-icon-grow { transition: all .1s ease-in-out; }
+ .ui-icon-grow:hover
+ {
+         -webkit-transform: scale(1.05);
+         -ms-transform: scale(1.05);
+         transform: scale(1.05);
+ }
+ 
+ 
