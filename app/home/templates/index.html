@@ -56,7 +56,8 @@
                 <div class="card-header text-white dashboard-card-header">
                     <span> {{ database.name| upper }} </span>
                     <span class="text-right float-right">
-                        <i class="fas fa-external-link-alt pr-3 ui-icon-grow"></i>
+                        <a href="/entity_sets/{{database.name}}/{{None}}"><i class="fas fa-external-link-alt pr-3 ui-icon-grow text-white"></i></a>
+                        
                         <a data-toggle="modal"
                             data-target="#deleteDatabase{{database.name}}">
                             <i class="fas fa-trash text-white ui-icon"></i>
@@ -69,7 +70,9 @@
                 <ul class="list-group list-group-flush"
                     style="padding: 0.6rem,1rem;">
                     <li class="list-group-item dashboard-list-group-item
-                        ui-icon-grow" style="color: #28df28;">
+                        ui-icon-grow" style="color: #28df28;"
+                        data-toggle="modal"
+                        data-target="#createES{{database.name}}{{database.type}}">
                         <i class="fas fa-plus pr-2"></i>Create Entity Set
                     </li>
                     {% for entitySet in database.entitySets: %}
@@ -215,6 +218,99 @@
                             </form>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade"
+            id="createES{{database.name}}{{database.type}}"
+            tabindex="-1" role="dialog">
+            <div class="modal-dialog
+                modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"
+                            id="createES">
+                            <i
+                                class="fas
+                                fa-plus-circle
+                                text-blue
+                                pr-3"></i>Create
+                            Entity Set
+
+                        </h5>
+                        <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close">
+                            <span
+                                aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="/createES">
+                        <div class="modal-body
+                            style="font-family:
+                            Roboto;">
+                            <div
+                                class="form-group">
+                                <label
+                                    for="entitySetName">Entity
+                                    Set
+                                    Name</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="entitySetName">
+                            </div>
+                            <div
+                                class="form-group">
+                                <label
+                                    for="create-es-attributes">Attributes</label>
+                                <textarea class="form-control"
+                                    name="create-es-attributes"
+                                    id="create-es-attributes"
+                                    cols="30"
+                                    rows="10">
+                                    {
+                                        "entitySetName": "student2",
+                                        "attributes": {
+                                            "id": {
+                                                "DataType": "INT",
+                                                "PK": 1,
+                                                "NN": 1,
+                                                "AI": 1
+                                            },
+                                            "studname": {
+                                                "DataType": "VARCHAR(20)",
+                                                "PK": 1,
+                                                "NN": 1,
+                                                "AI": 0
+                                            },
+                                            "grade": {
+                                                "DataType": "VARCHAR(2)",
+                                                "PK": 0,
+                                                "NN": 0,
+                                                "AI": 0
+                                            }
+                                        }
+                                    }
+                                </textarea>
+                            </div>
+                        </div>
+                        <div
+                            class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn
+                                btn-secondary"
+                                data-dismiss="modal">Cancel</button>
+                            <button
+                                type="submit"
+                                class="btn
+                                btn-primary">Create
+                                Entity Set</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

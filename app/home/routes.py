@@ -12,6 +12,7 @@ from jinja2 import TemplateNotFound
 from app.base.forms import CreateDatabaseForm, UpdateEntitySetForm
 import requests
 
+
 UDAPI_URL = "http://localhost:2020"
 
 
@@ -73,11 +74,52 @@ def index():
 #     return render_template('index.html', databases=databases, createDbForm=createDbForm, updateESForm=updateESForm)
 
 
+@blueprint.route('/entity_sets/<databaseName>/<entitySetName>', methods=['GET'])
+def displayES(databaseName,entitySetName):
+    updateESForm = UpdateEntitySetForm()
+
+    #get the following data from API in this format
+    database = {"name": "Test", "type": "MongoDB",
+                "entitySets": ["uno", "dos", "tres", "four", "five"]}
+    
+
+    #by default get the first entityset to display in table 2
+    if entitySetName == None:
+        entitySet = {
+            "name": "uno",
+            "records": [
+                {"id": "ipsum", "name": "amet", "course": "captain"},
+                {"id": "morrison", "name": "frog", "course": "dinner"}
+            ],
+            "schema": {"id": "integer", "name": "string", "course": "string"},
+            "primary_key": "id"
+        }
+    else:
+        entitySet = {
+            "name": "dos",
+            "records": [
+                {"id": "ipsum", "name": "amet", "course": "captain"},
+                {"id": "morrison", "name": "frog", "course": "dinner"}
+            ],
+            "schema": {"id": "integer", "name": "string", "course": "string"},
+            "primary_key": "id"
+        }
+
+    try:
+        return render_template('entity_sets.html', database=database, entitySet=entitySet, updateESForm=updateESForm)
+
+    except TemplateNotFound:
+        return render_template('error-404.html'), 404
+
+    # except:
+    #     return render_template('error-500.html'), 500
+
+
 @blueprint.route('/<template>')
 def route_template(template):
 
-    if not "username" in session:
-        return redirect(url_for('base_blueprint.login'))
+    # if not "username" in session:
+    #     return redirect(url_for('base_blueprint.login'))
 
     # if not current_user.is_authenticated:
     #     return redirect(url_for('base_blueprint.login'))

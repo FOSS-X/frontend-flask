@@ -27,4 +27,7 @@
          transform: scale(1.05);
  }
  
+ .table-ui:hover{
+    background:  #f2d7d5  ;
+ }
  
