@@ -333,6 +333,7 @@ def displayES(databaseType,databaseName,entitySetName):
     #         "primary_key": "id"
     #     }
 
+    # Create an Entity
     if 'createNewEntity' in request.form:
         database_type = request.args.get('databaseType')
         database_name = request.args.get('databaseName')
@@ -344,12 +345,12 @@ def displayES(databaseType,databaseName,entitySetName):
         for attribute,value in formData.items():
             if attribute != 'createNewEntity':
                 entityObj["entity"][attribute]=value
+        
         payload = json.loads(json.dumps(entityObj))
-        url = UDAPI_URL + "/" + database_type + "/databases/" + database_name +"/"+entitySetName
+        url = UDAPI_URL + "/" + database_type + "/databases/" + database_name + "/" + entitySetName
         headers = {'jwtToken': session['jwtToken']}
         response = requests.post(url, headers=headers, json=payload)
         data = response.json()
-        print(data)
         if data['success']:
             flash(data["message"], "success")
             return redirect(url_for('home_blueprint.displayES', databaseType=databaseType, databaseName=databaseName, entitySetName=entitySetName))
@@ -360,11 +361,68 @@ def displayES(databaseType,databaseName,entitySetName):
         print(data['message'])
         return render_template('errors/page_500.html'), 500
 
+    # Update an Entity
+    # if 'updateEntity' in request.form:
+    #     # database_type = request.args.get('databaseType')
+    #     # database_name = request.args.get('databaseName')
+    #     # entitySetName = request.args.get('entitySetName')
+
+
+    #     url = UDAPI_URL + "/" + databaseType + "/databases/" + databaseName + "/schema/" + entitySetName
+    #     headers = {'jwtToken': session['jwtToken']}
+    #     response = requests.get(url, headers=headers)
+    #     schemaObj=response.json()
+
+    #     keyAttribute = schemaObj['primary_key']
+    #     # return (schemaObj)
+    #     url = UDAPI_URL + "/" + databaseType + "/databases/" + databaseName + "/" + entitySetName + "/" + keyAttribute
+    #     headers = {'jwtToken': session['jwtToken']}
+    #     payload = {
+    #         "primeAttributeValue": "12",
+    #         "attributeName": "dname",
+    #         "attributeValue": "Data Science"
+    #     }
+    #     response = requests.put(url, headers=headers, json=payload)
+    #     data = response.json()
+
+    #     return data
+
+
+    # Delete Entity
+    if 'deleteEntity' in request.form:
+        keyAttributeValue = request.args.get('keyAttributeValue')
+
+        url = UDAPI_URL + "/" + databaseType + "/databases/" + databaseName + "/schema/" + entitySetName
+        headers = {'jwtToken': session['jwtToken']}
+        response = requests.get(url, headers=headers)
+        schemaObj=response.json()
+
+
+        keyAttribute = schemaObj['primary_key']
+        url = UDAPI_URL + "/" + databaseType + "/databases/" + databaseName + "/" + entitySetName + "/" + keyAttribute
+        headers = {'jwtToken': session['jwtToken']}
+        payload = {
+            "primeAttributeValue":keyAttributeValue
+        }
+        response = requests.delete(url, headers=headers, json=payload)
+        data = response.json()
+
+        if data['success']:
+            flash(data["message"], "success")
+            return redirect(url_for('home_blueprint.displayES', databaseType=databaseType, databaseName=databaseName, entitySetName=entitySetName))
+        elif not data['success']:
+            flash(data["message"], "danger")
+            return redirect(url_for('home_blueprint.displayES', databaseType=databaseType, databaseName=databaseName, entitySetName=entitySetName))
+
+        print(data['message'])
+        return render_template('errors/page_500.html'), 500
+
+
+
     try:
-         return render_template('entity_sets.html', database=database, entitySet=entitySet, updateESForm=updateESForm)
+        return render_template('entity_sets.html', database=database, entitySet=entitySet, updateESForm=updateESForm)
     except TemplateNotFound:
         return render_template('error-404.html'), 404
-    
 
 
 @blueprint.route('/<template>')
