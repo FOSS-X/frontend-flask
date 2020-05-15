@@ -246,7 +246,7 @@
                                             <h5 class="modal-title" id="editEntity"><i class="fas
                                                 fa-pencil
                                                 text-blue
-                                                pr-3"></i>Edit entity</h5>
+                                                pr-3"></i>Edit Entity</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -277,8 +277,8 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn
                                                     btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn
-                                                    btn-primary">Edit Entity</button>
+                                            <button type="submit" name="updateEntity" class="btn
+                                                    btn-primary">Update Entity</button>
                                         </div>
                                         </form>
                                     </div>
@@ -292,7 +292,7 @@
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="deleteEntitySet">
+                                            <h5 class="modal-title" id="deleteEntity">
                                                 <i class="fas fa-trash text-red
                                                     pr-3"></i>Delete
                                                 Entity</h5>
@@ -311,9 +311,9 @@
                                             <div class="modal-footer">
                                                 <button type="button" class="btn
                                                     btn-secondary" data-dismiss="modal">Cancel</button>
-                                                <form action="" method="DELETE">
-                                                    <button type="submit" class="btn
-                                                        btn-primary" name="DeleteCurrentEntity">Delete
+                                                <form action="?keyAttributeValue={{record[entitySet.primary_key]}}" method="POST">
+                                                    <button type="submit" name="deleteEntity" class="btn
+                                                        btn-primary">Delete
                                                         Entity Set</button>
                                                 </form>
                                             </div>
