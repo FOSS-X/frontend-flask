@@ -315,9 +315,9 @@
                                             <div class="modal-footer">
                                                 <button type="button" class="btn
                                                     btn-secondary" data-dismiss="modal">Cancel</button>
-                                                <form action="/deleteEntity" method="DELETE">
+                                                <form action="" method="DELETE">
                                                     <button type="submit" class="btn
-                                                        btn-primary">Delete
+                                                        btn-primary" name="DeleteCurrentEntity">Delete
                                                         Entity Set</button>
                                                 </form>
                                             </div>
@@ -349,7 +349,7 @@
                 </div>
                 <div class="modal-body">
                     <form
-                        action="?databaseType={{ database.type }}&databaseName={{ database.name }}&entitySetName={{ entitySet }}"
+                        action="?databaseType={{ database.type }}&databaseName={{ database.name }}&entitySetName={{ entitySet.name }}"
                         method="post">
                         {% for attribute,type in entitySet.schema.items():%}
                         <div class="form-group row">
@@ -372,7 +372,6 @@
             </div>
 
         </div>
-
     </div>
     {% endif %}
 

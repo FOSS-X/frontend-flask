@@ -284,26 +284,26 @@ def displayES(databaseType,databaseName,entitySetName):
         headers = {'jwtToken': session['jwtToken']}
         response = requests.get(url, headers=headers)
         entitiesData = response.json()
-
         url = UDAPI_URL + "/all/databases/"+ entitySetName + "/schema"
         headers = {'jwtToken': session['jwtToken']}
         response = requests.get(url, headers=headers)
         schemaObj=response.json()
         
         if entitiesData['success']:
-            entities = entitiesData['message']
+            entities = [row['entity'] for row in entitiesData['message']]
             entitySet = {
                 "name":entitySetName,
                 "schema":schemaObj["schema"],
                 "primary_key":schemaObj["primary_key"]
             }
             if entities:
-                entitySet["records"]=entities;
+                entitySet["records"]=entities
             else:
                 entitySet["records"]="";
+            print(entitySet)
         elif not entitiesData['success']:
             flash(entitiesData["message"], "danger")
-            return redirect(url_for('home_blueprint.displayES', databaseType=databaseType, databaseName=databaseName, entitySetName="None"))
+            return redirect(url_for('home_blueprint.displayES', databaseType=databaseType, databaseName=databaseName, entitySetName=entitySetName))
     else:
         entities = None
 
@@ -336,6 +336,7 @@ def displayES(databaseType,databaseName,entitySetName):
         database_type = request.args.get('databaseType')
         database_name = request.args.get('databaseName')
         entitySetName = request.args.get('entitySetName')
+        print(entitySetName)
         formData=request.form.to_dict()
         entityObj={}
         entityObj["entity"]={}
@@ -347,13 +348,13 @@ def displayES(databaseType,databaseName,entitySetName):
         headers = {'jwtToken': session['jwtToken']}
         response = requests.post(url, headers=headers, json=payload)
         data = response.json()
-
+        print(data)
         if data['success']:
             flash(data["message"], "success")
-            return redirect(url_for('home_blueprint.displayES', databaseType=databaseType, databaseName=databaseName, entitySetName="None"))
+            return redirect(url_for('home_blueprint.displayES', databaseType=databaseType, databaseName=databaseName, entitySetName=entitySetName))
         elif not data['success']:
             flash(data["message"], "danger")
-            return redirect(url_for('home_blueprint.displayES', databaseType=databaseType, databaseName=databaseName, entitySetName="None"))
+            return redirect(url_for('home_blueprint.displayES', databaseType=databaseType, databaseName=databaseName, entitySetName=entitySetName))
 
         print(data['message'])
         return render_template('errors/page_500.html'), 500
