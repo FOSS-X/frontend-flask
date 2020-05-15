@@ -16,9 +16,20 @@ import requests
 # from app import db, login_manager
 from app.base import blueprint
 from app.base.forms import LoginForm, CreateAccountForm, ResetPasswordForm
-# from app.base.models import User
 
-# from app.base.util import verify_pass
+import logging
+
+log = logging.getLogger(__name__)
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
 
 UDAPI_URL = "http://localhost:2020"
@@ -39,7 +50,6 @@ def login():
     login_form = LoginForm(request.form)
 
     if 'login' in request.form:
-        
         # POST to UDAPI to login
         username = request.form['username']
         password = request.form['password']
@@ -51,8 +61,6 @@ def login():
         }
         response = requests.post(url, json=payload)
         data = response.json()
-        # return data['jwtToken']
-    
 
         # If login successfull
         if data['success']:
@@ -75,22 +83,6 @@ def login():
 
         return render_template( 'login/login.html', msg=data['message'], form=login_form)
 
-        # # Locate user
-        # user = User.query.filter_by(username=username).first()
-        
-        # # Check the password
-        # if user and verify_pass( password, user.password):
-
-        #     login_user(user)
-        #     return redirect(url_for('base_blueprint.route_default'))
-
-        # # Something (user or pass) is not ok
-        # return render_template( 'login/login.html', msg='Wrong user or password', form=login_form)
-
-    # if not current_user.is_authenticated:
-    #     return render_template( 'login/login.html',
-    #                             form=login_form)
-    # return redirect(url_for('home_blueprint.index'))
     if not "username" in session:
         return render_template( 'login/login.html', form=login_form)
 
@@ -124,24 +116,7 @@ def create_user():
         if data['error_code'] == 7002:
             return render_template( 'login/register.html', msg=data['message'], form=create_account_form)
         
-
         return render_template( 'login/register.html', msg=data['message'], form=create_account_form)
-
-        # user = User.query.filter_by(username=username).first()
-        # if user:
-        #     return render_template( 'login/register.html', msg='Username already registered', form=create_account_form)
-
-        # user = User.query.filter_by(email=email).first()
-        # if user:
-        #     return render_template( 'login/register.html', msg='Email already registered', form=create_account_form)
-
-        # # else we can craeate the user
-        # user = User(**request.form)
-        # db.session.add(user)
-        # db.session.commit()
-
-        # return render_template( 'login/register.html', success='User created please <a href="/login">login</a>', form=create_account_form)
-
     else:
         return render_template( 'login/register.html', form=create_account_form)
 
@@ -188,14 +163,8 @@ def reset_password():
 
 
 @blueprint.route('/logout')
-# @login_required
 def logout():
-    # session.pop("username", None)
-    # session.pop("jwtToken", None)
-    # session.pop("email", None)
-    # session.pop("admin", None)
     session.clear()
-    # logout_user()
     return redirect(url_for('base_blueprint.login'))
 
 @blueprint.route('/shutdown')
@@ -205,12 +174,6 @@ def shutdown():
         raise RuntimeError('Not running with the Werkzeug Server')
     func()
     return 'Server shutting down...'
-
-## Errors
-
-# @login_manager.unauthorized_handler
-# def unauthorized_handler():
-#     return render_template('errors/page_403.html'), 403
 
 @blueprint.errorhandler(403)
 def access_forbidden(error):
@@ -223,3 +186,14 @@ def not_found_error(error):
 @blueprint.errorhandler(500)
 def internal_error(error):
     return render_template('errors/page_500.html'), 500
+
+# @blueprint.app_errorhandler(404)
+# def handle_exceptions(e):
+#     return render_template('error-404.html'), 404
+
+@blueprint.app_errorhandler(Exception)
+def handle_unexpected_error(e):
+    msg = "UnexpectedError: " + str(e)
+    log.exception(f"{bcolors.FAIL}{msg}{bcolors.WARNING}")
+    print(f"{bcolors.ENDC}")
+    return render_template('error-500.html'), 500
