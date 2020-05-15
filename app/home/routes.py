@@ -5,7 +5,7 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from app.home import blueprint
-from flask import render_template, redirect, url_for, session, request, flash
+from flask import render_template, redirect, url_for, session, request, flash,jsonify
 # from flask_login import login_required, current_user
 # from app import login_manager
 from jinja2 import TemplateNotFound
@@ -201,9 +201,9 @@ def displayES(databaseType,databaseName,entitySetName):
             "entitySets":entitySets
         }
 
-    else:
-        print(f"{bcolors.FAIL}Exception from UDAPI server side: {entitySetsData['message']}{bcolors.ENDC}")
-        return render_template('errors/page_500.html'), 500
+    # else:
+    #     print(f"{bcolors.FAIL}Exception from UDAPI server side: {entitySetsData['message']}{bcolors.ENDC}")
+    #     return render_template('errors/page_500.html'), 500
 
     # database = {"name": "Test", "type": "MongoDB",
     #             "entitySets": ["uno", "dos", "tres", "four", "five"]}
@@ -278,31 +278,29 @@ def displayES(databaseType,databaseName,entitySetName):
 
     # Get entities for the table
     # If entityset selected is not None and is in entity Sets of the DatabaseName
+    entitySet={}
     if entitySetName in entitySets:
         url = UDAPI_URL + "/" + databaseType + "/databases/" + databaseName + "/" + entitySetName
         headers = {'jwtToken': session['jwtToken']}
         response = requests.get(url, headers=headers)
         entitiesData = response.json()
 
+        url = UDAPI_URL + "/all/databases/"+ entitySetName + "/schema"
+        headers = {'jwtToken': session['jwtToken']}
+        response = requests.get(url, headers=headers)
+        schemaObj=response.json()
+        
         if entitiesData['success']:
-            entites = entitiesData['message']
-            if entites:
-                attributes = []
-                for i in entites[0].keys():
-                    attributes.append(i)
-                fieldTypes = [""] * len(attributes)
-                schema = dict(zip(attributes, fieldTypes))
-                primary_key = attributes[0]
-
-                entities = {
-                    "name":entitySetName,
-                    "records":entites,
-                    "schema":schema,
-                    "primary_key":primary_key
-                }
+            entities = entitiesData['message']
+            entitySet = {
+                "name":entitySetName,
+                "schema":schemaObj["schema"],
+                "primary_key":schemaObj["primary_key"]
+            }
+            if entities:
+                entitySet["records"]=entities;
             else:
-                entities = None
-                
+                entitySet["records"]="";
         elif not entitiesData['success']:
             flash(entitiesData["message"], "danger")
             return redirect(url_for('home_blueprint.displayES', databaseType=databaseType, databaseName=databaseName, entitySetName="None"))
@@ -334,11 +332,37 @@ def displayES(databaseType,databaseName,entitySetName):
     #         "primary_key": "id"
     #     }
 
-    try:
-        return render_template('entity_sets.html', database=database, entitySet=entities, updateESForm=updateESForm)
+    if 'createNewEntity' in request.form:
+        database_type = request.args.get('databaseType')
+        database_name = request.args.get('databaseName')
+        entitySetName = request.args.get('entitySetName')
+        formData=request.form.to_dict()
+        entityObj={}
+        entityObj["entity"]={}
+        for attribute,value in formData.items():
+            if attribute != 'createNewEntity':
+                entityObj["entity"][attribute]=value
+        payload = json.loads(json.dumps(entityObj))
+        url = UDAPI_URL + "/" + database_type + "/databases/" + database_name +"/"+entitySetName
+        headers = {'jwtToken': session['jwtToken']}
+        response = requests.post(url, headers=headers, json=payload)
+        data = response.json()
 
+        if data['success']:
+            flash(data["message"], "success")
+            return redirect(url_for('home_blueprint.displayES', databaseType=databaseType, databaseName=databaseName, entitySetName="None"))
+        elif not data['success']:
+            flash(data["message"], "danger")
+            return redirect(url_for('home_blueprint.displayES', databaseType=databaseType, databaseName=databaseName, entitySetName="None"))
+
+        print(data['message'])
+        return render_template('errors/page_500.html'), 500
+
+    try:
+         return render_template('entity_sets.html', database=database, entitySet=entitySet, updateESForm=updateESForm)
     except TemplateNotFound:
         return render_template('error-404.html'), 404
+    
 
 
 @blueprint.route('/<template>')
