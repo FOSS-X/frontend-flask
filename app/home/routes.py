@@ -284,7 +284,8 @@ def displayES(databaseType,databaseName,entitySetName):
         headers = {'jwtToken': session['jwtToken']}
         response = requests.get(url, headers=headers)
         entitiesData = response.json()
-        url = UDAPI_URL + "/all/databases/"+ entitySetName + "/schema"
+
+        url = UDAPI_URL + "/" + databaseType + "/databases/" + databaseName + "/schema/" + entitySetName
         headers = {'jwtToken': session['jwtToken']}
         response = requests.get(url, headers=headers)
         schemaObj=response.json()
