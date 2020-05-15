@@ -291,7 +291,7 @@ def displayES(databaseType,databaseName,entitySetName):
         schemaObj=response.json()
         
         if entitiesData['success']:
-            entities = [row['entity'] for row in entitiesData['message']]
+            entities = entitiesData['message']
             entitySet = {
                 "name":entitySetName,
                 "schema":schemaObj["schema"],
