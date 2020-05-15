@@ -39,5 +39,5 @@ class CreateDatabaseForm(FlaskForm):
 
 
 class UpdateEntitySetForm(FlaskForm):
-    database_name = TextField('Entity Set Name', id='entity_set_name_update',
+    entitySet_name = TextField('Rename Entity Set to:', id='entity_set_name_update',
                               validators=[DataRequired()])
