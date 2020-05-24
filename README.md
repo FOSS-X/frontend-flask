@@ -6,7 +6,7 @@
 
 ```sh
 git clone https://github.com/FOSS-X/udapi-ui-v2.git
-cd udapi-core-v2
+cd udapi-ui-v2
 ```
 
 2. Create a virtual environment
