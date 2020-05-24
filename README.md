@@ -23,5 +23,6 @@ pip install -r requirements.txt
 
 4.Run the application. By default it runs at port:5000
 ```sh
-python3 run.py
+export FLASK_APP=run.py
+flask run -h localhost -p 5000
 ```
