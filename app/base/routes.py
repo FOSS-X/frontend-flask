@@ -187,9 +187,9 @@ def not_found_error(error):
 def internal_error(error):
     return render_template('errors/page_500.html'), 500
 
-# @blueprint.app_errorhandler(404)
-# def handle_exceptions(e):
-#     return render_template('error-404.html'), 404
+@blueprint.app_errorhandler(404)
+def handle_exceptions(e):
+    return render_template('error-404.html'), 404
 
 @blueprint.app_errorhandler(Exception)
 def handle_unexpected_error(e):
